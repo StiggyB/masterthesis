@@ -169,7 +169,7 @@ Es soll eine Evaluation von Informationssystemen und Visualisierungen stattfinde
 \TODO{Auch noch Teile aus Einleitung AW2? Soll RT Ethernet und dass Fahrzeug mit einbezogen werden? Denke Ja.}
 \fi
 
-Im Kapitel \ref{cha:umfeldanalyse} wird grob das Wissenschaftliche \TODO{und wirtschaftliche?} Umfeld umrissen. In drei Unterabschnitten werden hier die Grundlagen und angrenzenden Wissensbereiche dieser Arbeit beleuchtet. Inwiefern die Wahl der richtigen Evaluationsmethode die Qualität der Ergebnisse und der möglichen Schlussfolgerungen beeinflusst. Aktuelle und bewährte Konzepte der eingesetzten Ethernet Netzwerke, sowie deren Methoden zur Visualisierung von Kommunikationsdaten in Bereichen der Flugzeugtechnik, der ... sowie der... werden erörtert, als auch die Anforderungen und die Analyse dieser betrachtet. \TODO{Das vielleicht mit in Section Evaluation -> Section: Evaluation und Anforderungsanalyse} \TODO{oder: Evaluation und die Bedeutung für Schlussfolgerungen und Anforderungen}
+Im Kapitel \ref{cha:umfeldanalyse} wird grob das Wissenschaftliche und wirtschaftliche Umfeld umrissen. In drei Unterabschnitten werden hier die Grundlagen und angrenzenden Wissensbereiche dieser Arbeit beleuchtet. Inwiefern die Wahl der richtigen Evaluationsmethode die Qualität der Ergebnisse und der möglichen Schlussfolgerungen beeinflusst. Aktuelle und bewährte Konzepte der eingesetzten Ethernet Netzwerke, sowie deren Methoden zur Visualisierung von Kommunikationsdaten in Bereichen der Flugzeugtechnik, der ... sowie der... werden erörtert, als auch die Anforderungen und die Analyse dieser betrachtet. \iffalse \TODO{Das vielleicht mit in Section Evaluation -> Section: Evaluation und Anforderungsanalyse} \TODO{oder: Evaluation und die Bedeutung für Schlussfolgerungen und Anforderungen}\fi
 Kapitel \ref{cha:evaluationsbasis} vergleicht verschiedene Evaluationstechniken und erläutert den Aufbau und die Herangehensweise dieser. Im Verlauf des Kapitels wird Aufgrund von verschiedenen Analysen anderer Wissenschaftlicher Ausarbeitungen eine Evaluationsmethode gewählt. Diese wird zur Evaluation für die im Kapitel \nameref{cha:literaturauswertung} vorgestellten akademischen Abhandlungen verwendet. Das oben genannte Kapitel \ref{cha:literaturauswertung} beinhaltet die erwähnte Literaturauswertung, mit Hilfe der erarbeiteten Evaluationstechnik werden diese Arbeiten aufgearbeitet. Das anschließende Kapitel \ref{cha:anforderungsanalyse} greift die in Kapitel \ref{cha:literaturauswertung} gewonnenen Erkenntnisse auf und es werden darauf basierend Anforderungen für die Darstellung von Netzwerkdaten im Fahrzeug-Ethernet erstellt. Aufgeteilt wird dieses Kapitel in drei Schritte. Zunächst werden allgemeingültige Anforderungen vorgestellt, gefolgt von Anforderungen speziell für den Visualisierungsbereich. Im Anschluss werden konkrete Anforderungen an Visualisierungen von Netzwerkdaten im Fahrzeug gestellt. Kapitel \ref{cha:auswahlkriterien} \TODO{möglich in Kapitel 5 rein..}
 Das Kapitel \ref{cha:anwendungskonzepte_und_bereiche} beschreibt welche Anwendungsmöglichkeiten sich aus der Anforderungsanalyse ergeben und wie, als auch wo, diese Kombiniert und eingesetzt werden können. Kapitel \ref{cha:zusammenfassung_und_fazit} schließt diese Arbeit mit einer Zusammenfassung und einem Fazit ab.
 % chapter einleitung (end)
@@ -187,28 +187,28 @@ In der \nameref{cha:einleitung} wurde erläutert warum Visualisierungen für die
 
 Im Abschnitt \ref{sec:evaluation} wird benennt welche grundlegenden Evaluationen es gibt und stellt diese vor. Es wird die Vorarbeit für das Kapitel \nameref{cha:evaluationsbasis} geleistet, welches die geeignetste Technik für die Visualisierung von Netzwerkdaten im Fahrzeugnetz herausarbeitet. Abschnitt \ref{sec:visualisierungen_und_werkzeuge} beschreibt die Notwendigkeit der Betrachtung von Visualisierungen und Werkzeugen nicht nur aus dem Automotive Bereich sondern auch aus angrenzenden Bereichen. Der Abschnitt befasst sich weiterhin damit welches diese Bereiche sind und warum diese in Frage kommen. Der abschließende Teil dieses Kapitels, \nameref{sec:anforderungen_und_analyse}, geht auf die Anforderungen an Visualisierungen ein. Es wird \dots 
 
-\section{Evaluation} % (fold)
+\section{Grundlagen der Evaluation sowie Evaluationseigenschaften} % (fold)
 \label{sec:evaluation}
 
-Im Bereich der Evaluation beschäftigt sich die Arbeit mit der Frage welche Techniken zur Evaluation sinnvoll in diesem Themenkomplex einsetzbar sind. Bereits das folgende Kapitel \ref{cha:evaluationsbasis} beschäftigt sich mit der Basis für eine Evaluation der Werkzeuge und Visualisierungen, welche hauptsächlich aus dem Bereich der Fahrzeugkommunikation stammen. Es wird herausgearbeitet welche Evaluationsmöglichkeiten es gibt und welche, aufgrund Ihrer Ergebnisse und Anwendungsgebiete, am geeignetsten erscheinen. Die Wahl der Art der Evaluation ist entscheidend, weil diese darüber entscheidet in welcher Art und Weise die Ergebnisse genutzt werden können. Diese Entscheidung wird von mehreren Faktoren beeinträchtigt. Den Zielen welche mit der Methode erreicht werden sollen, die Umstände und Grenzen die der Evaluationsaufgabe auferlegt sind und der Charakteristik der Objekte welche evaluiert werden sollen. Diese unterschiedlichen Faktoren interagieren miteinander was die Wahl der geeignetsten Evaluationsmethode schwierig gestaltet \cite{kitchenham_evaluating_1996-2}. Kitchenham hat bereits Mitte der neunziger die Evaluierungsmethoden in drei verschiedene Bereiche aufgeteilt. Diese teilen sich auf in:
+Im Bereich der Evaluation beschäftigt sich die Arbeit mit der Frage welche Techniken zur Evaluation sinnvoll in diesem Themenkomplex einsetzbar sind. Bereits das folgende Kapitel \ref{cha:evaluationsbasis} beschäftigt sich mit der Basis für eine Evaluation der Werkzeuge und Visualisierungen, welche hauptsächlich aus dem Bereich der Fahrzeugkommunikation stammen. Es wird herausgearbeitet welche Evaluationsmöglichkeiten es gibt und welche, aufgrund Ihrer Ergebnisse und Anwendungsgebiete, am geeignetsten erscheinen. Die Wahl der Art der Evaluation ist entscheidend, weil diese darüber entscheidet in welcher Art und Weise die Ergebnisse genutzt werden können. Diese Entscheidung wird von mehreren Faktoren beeinträchtigt. Den Zielen welche mit der Methode erreicht werden sollen, die Umstände und Grenzen die der Evaluationsaufgabe auferlegt sind und der Charakteristik der Objekte welche evaluiert werden sollen. Diese unterschiedlichen Faktoren interagieren miteinander was die Wahl der geeignetsten Evaluationsmethode schwierig gestaltet \cite{kitchenham_evaluating_1996-2}. Kitchenham hat bereits Mitte der neunziger die Evaluierungsmethoden in drei verschiedene Bereiche aufgeteilt. Diese teilen sich auf in: 
 
 \begin{itemize}
-  \item Quantitative Methoden, darunter versteht man die Möglichkeit das sich eine messbare Veränderung einer Eigenschaft des zu testenden Softwareprodukts oder Prozesses einstellt.
+  \item Quantitative Methoden, darunter versteht man die Möglichkeit das sich eine messbare Veränderung einer Eigenschaft des zu testenden Softwareprodukts oder Prozesses einstellt. Dabei werden spezifische wissenschaftliche Werkzeuge und Messungen verwendet.
   \item Qualitative Methoden, meinen Feature/Eigenschaften Analysen welche sich auf die Anforderungen an eine bestimmte Aufgabe bzw. Ablauf fokussieren und die Umsetzung dieser Anforderungen innerhalb einer Methode oder eines Tools bewerten.
   \item Hybride Methoden, sind beispielsweise \textit{Qualitative Effect Analysis} oder \textit{Benchmarking}. Die erstgenannte nutzt Quantitative Methoden sowie ein oder mehrere Expertenmeinungen. Beim Benchmarking werden ein oder mehrere Tools einer Reihe von Standardtests unterzogen um die Performance dieser Tools vergleichbar zu machen.
 \end{itemize}
 
-Neben der Unterteilung in diese drei Bereiche, gibt es eine weitere Dimension zu einer Evaluierung. Die Art wie eine Evaluierung aufgebaut ist. Auch hier wird in drei Typen der Organisation einer Arbeit unterschieden:
+Neben der Unterteilung in diese drei Bereiche, gibt es eine weitere Dimension bei einer Evaluierung, die Art wie eine Evaluierung aufgebaut ist. Auch hier wird zwischen drei möglichen Typen unterschieden:
 
 \begin{itemize}
   \item Formales Experiment, als formales Experiment bezeichnet man den Vorgang in dem von den Nutzern verlangt wird eine bestimmte Aufgabe, oder auch verschiedene, auszuführen unter Zuhilfenahme der zu untersuchenden Werkzeuge oder Methoden. 
-  \item Fallstudie, hier wird jede Methode, jedes Werkzeug in einem Projekt aus der Praxis getestet. dabei werden die Standardentwicklungsprozeduren der evaluierenden Organisation verwendet.
-  \item Umfrage
+  \item Fallstudie, hier wird jede Methode oder jedes Werkzeug in einem Projekt aus der Praxis getestet. Dabei werden die Standardentwicklungsprozeduren der evaluierenden Organisation verwendet.
+  \item Umfrage, Nutzer welche zuvor bestimmte Methoden oder Werkzeuge verwendet haben werden nach Ihren Erfahrungen mit diesen befragt. Die Informationen der Benutzer können dann mit statistischen Techniken analysiert werden.
 \end{itemize}
 
-as  a  formal  experiment  where  many  subjects  (i.e.  software  engineers)  are  asked  to  perform  a  task  (or  vari-  ety  of  tasks)  using  the  different  methods/tools  under  in-  vestigation.  Subjects  are  assigned  to  each  method/tool  such  that  results  are  unbiased  and  can  be  analysed  using  standard  statistical  techniques;  •  as  a  case  study  where  each  method/tool  under  inves-  tigation  is  tried  out  on  a  real  project  using  the  stan-  dard  project  development  procedures  of  the  evaluating  organisation;  •  as  a  survey  where  staff/organisations  that  have  used  specific  methods  or  tools  on  past  projects  4  are  asked  to  provide  information  about  the  method  or  tool.  Informa-  tion  from  the  method/tool  users  can  be  analysed  using  standard  statistical  techniques
+Die genannten Bereiche können mit verschiedensten Typen der Evaluation kombiniert werden.
 
-
+\iffalse
 4. Qualitative screening: A feature-based evaluation done by a  single individual who not only determines the features to be assessed and their rating scale but also does the assessment. For  initial screening, the evalua- tions are usually based  on literature describing the soft- ware method/tools rather than actual use of the meth- ods/too KITCHENHAM1
 
 \begin{itemize}
@@ -218,9 +218,10 @@ the current state-of-the-art systems or techniques.
 \end{itemize}
 \TODO{...}
 \TODO{Beispiele}
+\fi
 % section evaluation (end)
 
-\section{Visualisierungen und Werkzeuge} % (fold)
+\section{Einführung in grundlegende Visualisierungen und Werkzeuge} % (fold)
 \label{sec:visualisierungen_und_werkzeuge}
 
 Visualisierungen und Werkzeuge wie zum Beispiel Informationssysteme werden in vielen Bereichen der Wissenschaft und Wirtschaft eingesetzt. Dieser Abschnitt möchte einen Überblick über Methoden und Werkzeuge geben und dabei auch in angrenzende Wissensbereiche vorstoßen. 
@@ -240,13 +241,14 @@ Eine noch detaillierte Einführung in die Netzwerk-Analyse mit Hilfe von Graphen
 
 Mengen mit Werten die sich über die Zeit verändern, sind eine der häufigsten Formen von aufgezeichneten Daten. Auch im Netzwerk häufen sich Daten welche über die Zeit veränderlich sind, wie die genutzte Bandbreite, die Veränderung der Latenz oder des Jitters. Es gibt einige Visualisierungen die diese Art der Darstellung von sogenannten Time-Series Data/Zeitreihendaten unterstützen. 
 
-\textbf{Small Multiples.} Mehrere Zeitreihen können innerhalb von nur einem Diagramm dargestellt werden. Dadurch können allerdings Überschneidungen entstehen wodurch sich die Lesbarkeit verringern kann. Eine Alternative ist die Darstellung in Small Multiples, hier wird jede Zeitreihe Achsen-gleich in einem eigenen Diagramm dargestellt. Durch diese Darstellung können allgemeine Trends sowie individuelle Muster erkannt werden. In Projekt 1 wurde diese Darstellungsform bereits in kleinem Rahmen gewährleistet. Wie in Abbildung \ref{fig:synch_splines} zu sehen, können über einen Synchronisationsbutton die verschiedenen Zeitreihen auf eine einheitliche Skala des höchsten Maximums und des kleinsten Minimums der ausgewählten Diagramme angepasst werden.
+\textbf{Small Multiples.} Mehrere Zeitreihen können innerhalb von nur einem Diagramm dargestellt werden. Dadurch können allerdings Überschneidungen entstehen wodurch sich die Lesbarkeit verringern kann. Eine Alternative ist die Darstellung in Small Multiples, hier wird jede Zeitreihe Achsen-gleich in einem eigenen Diagramm dargestellt. Durch diese Darstellung können allgemeine Trends sowie individuelle Muster erkannt werden. In Projekt 1 wurde diese Darstellungsform bereits in kleinem Rahmen gewährleistet. \iffalse Wie in Abbildung \ref{fig:synch_splines} zu sehen, können über einen Synchronisationsbutton die verschiedenen Zeitreihen auf eine einheitliche Skala des höchsten Maximums und des kleinsten Minimums der ausgewählten Diagramme angepasst werden.
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=\textwidth]{img/synch_splines}
   \caption{Small Multiples der genutzten Bandbreite von drei verschiedenen CAN-Bussen}
   \label{fig:synch_splines}
 \end{figure*}
+\fi
 
 In Burch und Weiskopfs Abhandlung \cite{Burch:2014:FES:2636240.2636839} wird diese Darstellungsform zur Verdeutlichung der Dynamik von Graphen genutzt. Im Small Multiple Aufbau werden Node-Link Diagramme verwendet, welche die Veränderung des Graphen Sequentiell vermitteln soll. Die Vorteile eines Small Multiple Aufbaus gegenüber, von den Autoren als sogenannte Large Singles bezeichnete, einfachen Darstellungen wird in van den Elzen und van Wijks Artikel erläutert \cite{elzen_small_multiple_2013}. Die Kernaussage besagt, dass mit Small Multiples ein breiterer Umfang an Daten aufgenommen werden kann als mit Lage Singles.
 
@@ -258,9 +260,9 @@ Naheliegender angrenzende Bereiche sind jene aus dem Verkehrswesen. In der Flugz
 
 % section visualisierungen_und_werkzeuge (end)
 
-\section{Anforderungen und Analyse} % (fold)
+\section{Grundlagen für Anforderungen und Analyse} % (fold)
 \label{sec:anforderungen_und_analyse}
-Dieser Abschnitt...
+Dieser Abschnitt beschreibt grundlegende Aspekte ... 
 
 Damit visuelle Analyse Tools effektiv genutzt werden können, müssen diese eine fließende und flexible Nutzung von Visualisierungen ermöglichen. Um das zu ermöglichen wird in \cite{heer_interactive_2012} eine \textit{Taxonomy of interactive dynamics for visual analysis} eingeführt. Diese ist in drei Kategorien eingeteilt welche die kritischen Aufgaben der visuellen Analyse beschreiben. Die Kategorien sind \textit{Data and View Specification}, \textit{View Manipulation} sowie \textit{Process and Provenance}. Die erste Kategorie beschäftigt sich mit den spezifischen Daten und Views welche für die jeweiligen Bedürfnisse der Analysten von Interesse sind. Es muss eine Steuerung der Applikation ermöglicht werden, so dass die Daten selektiv visualisiert werden können, irrelevante Daten herausgefiltert werden und ebenso müssen die Informationen sortiert werden können um mögliche Muster erkennbar zu machen. Nach der Erstellung einer Visualisierung muss es den Analysten ermöglicht werden die gestellten Views nach Bedürfnis zu manipulieren, dies beschreibt die zweite Kategorie der Taxonomy. Die Manipulation der Visualisierung ist nötig um Muster aufzeigen zu können, Hypothesen zu untersuchen und zur Navigation in den Daten bspw. via Drilldown. Analyse Tools muss es möglich sein multiple verbundene Visualisierungen zu organisieren und zu koordinieren um mehr Einsicht in Multidimensionale Daten zu bieten als es isolierte Views vermögen. Dies wird schon im häufig zitierten Mantra von Ben Shneiderman vorgegeben: "\textit{Overview first, zoom and filter, then details-on-demand}" \cite{shneiderman_the_eyes_1996}. Die abschließende Kategorie \textit{Process and Provenance} beschreibt den iterativen Prozess der Datenexploration sowie den der Dateninterpretation. Wenn Analysten Ihre bisher getätigten Aktionen innerhalb eines Programms nachverfolgen können kann die Arbeit überprüft und verbessert werden. Es sollte möglich sein die Ergebnisse zu dokumentieren als auch diese mit anderen zu teilen um eine Diskussion darüber zu ermöglichen. Ferner können Analysewerkzeuge auch Anfänger durch Ihre Funktionen führen um die Benutzung und den Einstieg zu erleichtern.
 Die vorgegebene Taxonomie bietet einen guten Einstiegs- und Orientierungspunkt in der Welt der Visualisierung und kann ebenso als Checkliste bei der Entwicklung eines neuen Analysetools verwendet werden. Sie zeigt viele Möglichkeiten auf um den Daten Herr werden zu können. 
@@ -310,17 +312,19 @@ In einer Studie von Sedlmair et al. \cite{sedlmair2009} wurden ausgewählte Dars
 \section{Visualisierungen und Werkzeuge} % (fold)
 \label{sec:anwendungen_und_werkzeuge}
 Es wurde bereits eine große Zahl an verschiedensten Analyse-Werkzeugen entwickelt. Dieser Abschnitt geht auf die Funktion, die Nutzbarkeit und das Anwendungsgebiet der für diese Arbeit relevanten Programme ein. Die Programme kommen aus den verschiedensten Bereichen, der Automatisierungstechnik, der Flug- und Fahrzeugindustrie so wie weiteren kleineren Bereichen. Es handelt sich dabei sowohl um proprietäre, als auch um wissenschaftlich erarbeitete Anwendungen. 
-\iffalse\TODO{RLY? Recap if still true}\fi
+\iffalse\TODO{RLY? Recap if still true} 
 
 Cardiogram \cite{sedlmair_cardiogram:_2011} ist eine Software, die speziell zur Darstellung von Daten im Automotiven Bereich entwickelt wurde. Es visualisiert Fehler in Prototypen-Tests über Logfiles, welche während reellen Testfahrten entstehen. In dieser Arbeit von Sedlmaier et al. gibt es bereits erste Ansätze zum Umgang mit großen Datenmengen im Gigabyte Bereich, wie automatisierte Datenfilterung und -abstraktion über State Machines sowie automatisierte Fehlererkennung.\TODO{detaillierter}
 
 
-In der neuesten Arbeit von Lajmi et al. \cite{lajmi_using_2013} wurde Ethernet bereits zur Netzwerkanalyse innerhalb eines Fahrzeugs genutzt. Hier wurde ein Netzwerktool ähnlich zu WireShark, namentlich CableFish, entwickelt. Die Software erkennt bereits neuartige Protokolle der Automobilindustrie, wie z.B. SOME-IP \cite{someip_scalable_2014}, und ist gedacht als Unterstützung für Diagnosetools. Allerdings werden hier zwar mit Hilfe von Ethernet Daten empfangen, es wurden allerdings die Daten der fahrzeugspezifischen Protokolle, wie LIN, CAN und FlexRay in Ethernetpakete verpackt. Des Weiteren wurde dieses Programm bisher nur in einer simulierten Umgebung getestet, hat aber eine verbesserte Echtzeitfähigkeit. Da für wurde ein weiterer Buffer vor der Datenspeicherung eingebaut und so die Anzahl der Systemaufrufe reduziert. \TODO{DETAILS}
+In der neuesten Arbeit von Lajmi et al. \cite{lajmi_using_2013} wurde Ethernet bereits zur Netzwerkanalyse innerhalb eines Fahrzeugs genutzt. Hier wurde ein Netzwerktool ähnlich zu WireShark, namentlich CableFish, entwickelt. Die Software erkennt bereits neuartige Protokolle der Automobilindustrie, wie z.B. SOME-IP \cite{someip_scalable_2014}, und ist gedacht als Unterstützung für Diagnosetools. Allerdings werden hier zwar mit Hilfe von Ethernet Daten empfangen, es wurden allerdings die Daten der fahrzeugspezifischen Protokolle, wie LIN, CAN und FlexRay in Ethernetpakete verpackt. Des Weiteren wurde dieses Programm bisher nur in einer simulierten Umgebung getestet, hat aber eine verbesserte Echtzeitfähigkeit. Da für wurde ein weiterer Buffer vor der Datenspeicherung eingebaut und so die Anzahl der Systemaufrufe reduziert. \TODO{DETAILS}\fi
 % section anwendungen_und_werkzeuge (end)
 % chapter literaturauswertung (end)
 
 \chapter{Anforderungsanalyse} % (fold)
 \label{cha:anforderungsanalyse}
+
+\iffalse
 Wie hilft diese Vis Technik/Werkzeug bei welchem Fehler oder Beobachtung auch immer?
 
 Motivation für diese Anforderung?
@@ -330,9 +334,10 @@ Motivation für diese Anforderung?
 
 A systematic review -> 2. Absatz in Conclusion \cite{isenberg_systematic_2013} \newline
 empirical studies in \cite{lam_empirical_2012}
-
+\fi
 \section{Allgemeine Anforderungen} % (fold)
 \label{sec:allgemeine_anforderungen}
+
 Dieser Abschnitt soll die unterschiedlichen Anforderungen welche an Visualisierungswerkzeuge, ebenso wie an Visualisierungstechniken gestellt werden, herausarbeiten. Im folgenden werden dann die essentiellen Anforderungen hervorgehoben um in einem letzten Schritt diese auf ihre Anwendbarkeit im Automotivebereich geprüft.
 
 
@@ -359,8 +364,8 @@ Spez. Anforderungen an Werkzeuge:
   \item Neue Erkenntnisse schaffen
   \item Visuelle Analysen mit Schlussfolgerungen über Daten
 \end{itemize}
-
-\TODO{ANMERKEN: SEHR SEHR ALLGEMEIN, SINN? }
+\iffalse
+\TODO{ANMERKEN: SEHR SEHR ALLGEMEIN, SINN? }\fi
 % subsection anforderungen_an_werkzeuge (end)
 
 
@@ -394,8 +399,8 @@ Werkzeuge mögliche Evaluierungsrichtungen:
 % chapter anforderungsanalyse (end)
 
 \chapter{Auswahlkriterien} % (fold)
-\label{cha:auswahlkriterien}
-\TODO{Das eher als section in Anforderungsanalyse?}
+\label{cha:auswahlkriterien}\iffalse
+\TODO{Das eher als section in Anforderungsanalyse?}\fi
 Hier steht das Ergebnis der Anforderungsanalyse. Welche Anforderungen möchte ich anführen für eine Entwicklung von Visualisierungen und Visualisierungswerkzeugen im Fahrzeugnetzbereich.
 % chapter auswahlkriterien (end)
 
