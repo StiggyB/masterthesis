@@ -182,8 +182,8 @@ Es soll eine Evaluation von Informationssystemen und Visualisierungen stattfinde
 \TODO{Auch noch Teile aus Einleitung AW2? Soll RT Ethernet und dass Fahrzeug mit einbezogen werden? Denke Ja.}
 \fi
 
-In Kapitel \ref{cha:umfeldanalyse} wird grob das wissenschaftliche und wirtschaftliche Umfeld umrissen. In drei Unterabschnitten werden hier die Grundlagen und angrenzenden Wissensbereiche dieser Arbeit beleuchtet. Es wird dargelegt inwiefern, nach einschlägiger Literatur, die Wahl der richtigen Evaluationsmethode die Qualität der Ergebnisse und der möglichen Schlussfolgerungen beeinflusst. Aktuelle und bewährte Konzepte der eingesetzten Ethernet Netzwerke, sowie deren Methoden zur Visualisierung von Kommunikationsdaten in Bereichen der Flugzeugtechnik, der Automatisierungstechnik sowie der \TODO{Schiffstechnik? Bahn? } werden erörtert, als auch die Anforderungen und die Analyse dieser betrachtet. \iffalse \TODO{Das vielleicht mit in Section Evaluation -> Section: Evaluation und Anforderungsanalyse} \TODO{oder: Evaluation und die Bedeutung für Schlussfolgerungen und Anforderungen}\fi
-Kapitel \ref{cha:evaluationsbasis} vergleicht verschiedene Evaluationstechniken und erläutert den Aufbau und die Herangehensweise dieser. Im Verlauf des Kapitels wird Aufgrund von verschiedenen Analysen anderer Wissenschaftlicher Ausarbeitungen eine Evaluationsmethode gewählt. Diese wird zur Evaluation für die im Kapitel \nameref{cha:literaturauswertung} vorgestellten akademischen Abhandlungen verwendet. Das oben genannte Kapitel \ref{cha:literaturauswertung} beinhaltet die erwähnte Literaturauswertung, mit Hilfe der erarbeiteten Evaluationstechnik werden diese Arbeiten aufgearbeitet. Das anschließende Kapitel \ref{cha:anforderungsanalyse} greift die in Kapitel \ref{cha:literaturauswertung} gewonnenen Erkenntnisse auf und es werden darauf basierend Anforderungen für die Darstellung von Netzwerkdaten im Fahrzeug-Ethernet erstellt. Aufgeteilt wird dieses Kapitel in drei Schritte. Zunächst werden allgemeingültige Anforderungen vorgestellt, gefolgt von Anforderungen speziell für den Visualisierungsbereich. Im Anschluss werden konkrete Anforderungen an Visualisierungen von Netzwerkdaten im Fahrzeug gestellt. Kapitel \ref{cha:auswahlkriterien} \TODO{möglich in Kapitel 5 rein..}
+In Kapitel \ref{cha:umfeldanalyse} wird grob das wissenschaftliche und wirtschaftliche Umfeld umrissen. In drei Unterabschnitten werden hier die Grundlagen und angrenzenden Wissensbereiche dieser Arbeit beleuchtet. Es wird dargelegt inwiefern, nach einschlägiger Literatur, die Wahl der richtigen Evaluationsmethode die Qualität der Ergebnisse und der möglichen Schlussfolgerungen beeinflusst. Aktuelle und bewährte Konzepte der eingesetzten Ethernet Netzwerke, sowie deren Methoden zur Visualisierung von Kommunikationsdaten in Bereichen der Flugzeugtechnik, der Automatisierungstechnik sowie der \iffalse\TODO{Schiffstechnik? Bahn? }\fi werden erörtert, als auch die Anforderungen und die Analyse dieser betrachtet. \iffalse \TODO{Das vielleicht mit in Section Evaluation -> Section: Evaluation und Anforderungsanalyse} \TODO{oder: Evaluation und die Bedeutung für Schlussfolgerungen und Anforderungen}\fi
+Kapitel \ref{cha:evaluationsbasis} vergleicht verschiedene Evaluationstechniken und erläutert den Aufbau und die Herangehensweise dieser. Im Verlauf des Kapitels wird Aufgrund von verschiedenen Analysen anderer Wissenschaftlicher Ausarbeitungen eine Evaluationsmethode gewählt. Diese wird zur Evaluation für die im Kapitel \nameref{cha:literaturauswertung} vorgestellten akademischen Abhandlungen verwendet. Das oben genannte Kapitel \ref{cha:literaturauswertung} beinhaltet die erwähnte Literaturauswertung, mit Hilfe der erarbeiteten Evaluationstechnik werden diese Arbeiten aufgearbeitet. Das anschließende Kapitel \ref{cha:anforderungsanalyse} greift die in Kapitel \ref{cha:literaturauswertung} gewonnenen Erkenntnisse auf und es werden darauf basierend Anforderungen für die Darstellung von Netzwerkdaten im Fahrzeug-Ethernet erstellt. Aufgeteilt wird dieses Kapitel in drei Schritte. Zunächst werden allgemeingültige Anforderungen vorgestellt, gefolgt von Anforderungen speziell für den Visualisierungsbereich. Im Anschluss werden konkrete Anforderungen an Visualisierungen von Netzwerkdaten im Fahrzeug gestellt. \iffalse Kapitel \ref{cha:auswahlkriterien} \TODO{möglich in Kapitel 5 rein..} \fi
 Das Kapitel \ref{cha:anwendungskonzepte_und_bereiche} beschreibt welche Anwendungsmöglichkeiten sich aus der Anforderungsanalyse ergeben und wie, als auch wo, diese Kombiniert und eingesetzt werden können. Kapitel \ref{cha:zusammenfassung_und_fazit} schließt diese Arbeit mit einer Zusammenfassung und einem Fazit ab.
 % chapter einleitung (end)
 
@@ -191,7 +191,6 @@ Das Kapitel \ref{cha:anwendungskonzepte_und_bereiche} beschreibt welche Anwendun
 \label{cha:umfeldanalyse}
 In der \nameref{cha:einleitung} wurde erläutert warum Visualisierungen für die Darstellung der Netzwerkkommunikationsdaten im Fahrzeug wichtig sind. Dieses Kapitel skizziert die Position dieser Arbeit im Bezug auf das wissenschaftliche Umfeld. Der Kernbereich beschäftigt sich mit Visualisierungen aus dem Automotive Bereich. Im speziellen mit Darstellungen für die Kommunikationsdaten und deren Metriken im modernen Automotive Realtime Ethernet. Neben diesem Hauptbereich gibt es mehrere weitere angrenzende Themen die für die Arbeit von Bedeutung sind. In der folgenden Übersicht \ref{fig:theme_overview} sind diese Bereiche dargestellt. Das Umfeld ist im Wesentlichen in drei Teile gegliedert, Evaluation, Werkzeuge und Visualisierungen sowie Anforderungen und die Analyse dieser. 
 
-\TODO{Bild überarbeiten.. nutzen.. möglichkeiten... vage vage}
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{img/theme_overview.pdf}
@@ -204,30 +203,59 @@ Im Abschnitt \ref{sec:grundlagen_der_evaluation_sowie_evaluationseigenschaften} 
 \section{Grundlagen der Evaluation sowie Evaluationseigenschaften} % (fold)
 \label{sec:grundlagen_der_evaluation_sowie_evaluationseigenschaften}
 Im Bereich der Evaluation beschäftigt sich die Arbeit mit der Frage welche Techniken zur Evaluation sinnvoll in diesem Themenkomplex einsetzbar sind. Es wird herausgearbeitet welche Evaluationsmöglichkeiten es gibt und welche, aufgrund Ihrer Ergebnisse und Anwendungsgebiete, am geeignetsten erscheinen. Dieser Abschnitt zeigt grundlegende Evaluationsmethoden und deren Anforderungen sowie nutzen. Im Folgekapitel wird dann eine der vorgestellten Methoden ausgewählt und als Grundlage für die Literaturanalyse verwendet.
+Bevor die Techniken zur Evaluation vorgestellt werden, folgt zunächst ein Einblick wie zwischen Evaluationen differenziert wird, weshalb Evaluation verwendet wird und was damit erreicht werden soll.
 
-Grundsätzlich kann bei Evaluationen zwischen zwei Herangehensweisen unterschieden werden. Zum Einen aus der Sicht des Experten in Hinblick auf Softwaredesigns oder der Usability, ohne Einwirkung von Nutzern und zum anderen Evaluationen die die tatsächliche Nutzung eines Systems untersucht. Ersteres eignet sich insbesondere zur Bewertung von Design, Darstellung und Prototypen, letzteres benötigt normalerweise einen funktionierenden Prototypen oder eine bereits bestehende Implementierung. Natürlich ist das eine sehr grobe Unterscheidung und es kann dabei zu Überschneidungen kommen. Beispielsweise können Nutzer bereits im frühen Entwicklungsprozess mit eingebunden werden oder Experten basierende Analysen werden an bestehenden Implementierungen durchgeführt um günstig und vor allem schnellere Usability Bewertungen vornehmen zu können.
-% Diese Ausarbeitung nähert sich einer Evaluation aus der Sicht der Usability. 
-
-Die Wahl der Art der Evaluation ist entscheidend, weil diese vorgibt in welcher Art und Weise die Ergebnisse genutzt werden können. Diese Entscheidung wird von mehreren Faktoren beeinträchtigt. Den Zielen welche mit der Methode erreicht werden sollen, die Umstände und Grenzen die der Evaluationsaufgabe auferlegt sind und der Charakteristik der Objekte welche evaluiert werden sollen. Diese unterschiedlichen Faktoren interagieren miteinander was die Wahl der geeignetsten Evaluationsmethode schwierig gestaltet \cite{kitchenham_evaluating_1996-2}. Kitchenham hat bereits Mitte der neunziger Jahre die Evaluierungsmethoden in drei verschiedene Bereiche aufgeteilt. Diese teilen sich auf in:
-
+In der Literatur wird auf verschiedenste Art und Weise zwischen Evaluationen unterschieden. Im folgenden betrachten wir drei verschiedene Klassifikationsarten sowie deren Merkmale, Vorteile und mögliche Nachteile.  
+Kitchenham \cite{kitchenham_evaluating_1996-1} hat Mitte der neunziger Jahre bei Evaluierungsmethoden zwischen zwei Messmethodiken differenziert. Zum einen Quantitative Methoden und zum anderen Qualitative Methoden. Eine dritte Variante vereinigt beide Messmethoden, diese werden als Hybride Methoden beschrieben. Die folgende Auflistung beschreibt die genannten Methoden kurz.
 \begin{itemize}
   \item Quantitative Methoden, darunter versteht man die Möglichkeit das sich eine messbare Veränderung einer Eigenschaft des zu testenden Softwareprodukts oder Prozesses einstellt. Dabei werden spezifische wissenschaftliche Werkzeuge und Messungen verwendet.
   \item Qualitative Methoden, meinen Feature/Eigenschaften Analysen welche sich auf die Anforderungen an eine bestimmte Aufgabe bzw. Ablauf fokussieren und die Umsetzung dieser Anforderungen innerhalb einer Methode oder eines Tools bewerten.
   \item Hybride Methoden, sind beispielsweise \textit{Qualitative Effect Analysis} oder \textit{Benchmarking}. Die erstgenannte nutzt Quantitative Methoden sowie ein oder mehrere Expertenmeinungen. Beim Benchmarking werden ein oder mehrere Tools einer Reihe von Standardtests unterzogen um die Performance dieser Tools vergleichbar zu machen.
 \end{itemize}
+Dieser Ansatz Unterscheidet also nach der Art der Messmethode. Der Vorteil in dieser Unterscheidungsart liegt darin, dass bereits zuvor Identifiziert werden kann ob Messbare Effekte bei der Evaluation entstehen oder es sich um eine Eignungsanalyse von Methoden oder Werkzeugen zur Bestimmung der Nutzbarkeit handelt. Dabei können jedoch wichtige Aspekte außer Acht gelassen werden, wie zum Beispiel der nötige Zeitaufwand oder zu welchem Zeitpunkt der Entwicklung eines Programms oder eines Designs die Evaluation am sinnvollsten eingesetzt werden kann. 
+In der Psychologie wird bei Evaluationen häufig zwischen formativer und summativer Evaluation unterschieden \TODO{cite}. Es gibt für diese Möglichkeit zur Differenzierung jedoch auch Beispiele aus der Informationsvisualisierung \cite{andrews_evaluating_2006}. 
+\begin{itemize}
+  \item Formative Evaluation, die formative Evaluation wir meist begleitend zur Implementierung oder zum Projekt durchgeführt. Es wird dabei in Intervallen Untersucht und Zwischenergebnisse festgehalten. So können laufende Prozesse angepasst werden und wiederum erneut evaluiert werden.
+  \item Summative Evaluation, als summative Evaluation wird eine das Resultat analysierende Evaluation bezeichnet. Daraus folgt, diese Evaluationen werden nach Abschluss eines Projektes durchgeführt. So ist es möglich das Projekt, Design oder ähnliches zusammenfassend zu bewerten.
+\end{itemize}
+Eine Unterscheidung zwischen Methoden welche während oder nach einem Projekt durchgeführt werden, erscheint besonders dann sinnvoll wenn vor einem Projekt festgelegt wird mit welchen Methoden während und abschließend gearbeitet werden soll. Da in dieser Arbeit bestehende Visualisierungen auf ihre Eignung für den Einsatz in einer möglichen Automotive Ethernet Netzwerkvisualisierung hin Evaluiert werden, fallen formative Methoden bereit von vornherein aus. So kann also gesagt werden das diese Art der Unterscheidung sich nicht für die Ziele dieser Arbeit eignet. 
 
+Die letzte Differenzierung die hier betrachtet werden soll, unterscheidet
+grundsätzlich zwischen zwei Herangehensweisen für Evaluationen. Zum Einen aus der Sicht des Experten in Hinblick auf Softwaredesigns oder der Usability, ohne Einwirkung von Nutzern. Das sind sogenannte Prüfmethoden. Zum anderen Evaluationen die die tatsächliche Nutzung eines Systems untersucht, namentlich Testmethoden, in welchen repräsentative Endnutzer ein oder mehrere Interfaces nutzen und Beobachtungen oder Messungen aufgezeichnet werden.
+\begin{itemize}
+  \item Evaluation durch Expertenanalyse, dies basiert auf anerkannten Expertenmeinungen mit Hilfe welcher das Design bewertet wird und die Auswirkungen auf Nutzer analysiert werden.
+  \item Evaluation durch Nutzermitwirkung, lässt den Endanwender das System auf verschiedene Art und Weisen testen. Die Usability steht im Vordergrund.
+\end{itemize}
+Ersteres eignet sich insbesondere zur Bewertung von Design, Darstellung und Prototypen, letzteres benötigt normalerweise einen funktionierenden Prototypen oder eine bereits bestehende Implementierung. Natürlich ist das eine sehr grobe Unterscheidung und es kann dabei zu Überschneidungen kommen. Beispielsweise können Nutzer bereits im frühen Entwicklungsprozess mit eingebunden werden oder Experten basierende Analysen werden an bestehenden Implementierungen durchgeführt um günstig und vor allem schnellere Usability Bewertungen vornehmen zu können. Der grobe Unterscheidungsgrad dieser Aufteilung eignet sich gut um ein weites Spektrum an Evaluationen zu betrachten. Diese Differenzierung erscheint, auf Grund der genannten Vorteile beider Evaluationsarten, am geeignetsten für die Arbeit. Bevor die wesentlichen, in diese Aufteilung passenden, Evaluationen vorgestellt werden, werden zunächst noch die allgemeinen Ziele von Evaluationen betrachtet.
+% Diese Ausarbeitung nähert sich einer Evaluation aus der Sicht der Usability.
+
+\subsection{Evaluationsziele} % (fold)
+\label{sub:evaluationsziele}
+
+% subsection evaluationsziele (end)
+Für Evaluationen können, laut Dix \cite{alan_dix_human-computer_2004}, drei Hauptziele genannt werden. Zu nächst den Umfang und die Erreichbarkeit der Funktionalitäten des Systems zu bewerten, die Bewertung der Benutzererlebnisses und spezifische Probleme des Systems zu identifizieren. Die Funktionalität ist wichtig, weil sie den Erwartungen und den Anforderungen des Nutzers entsprechen muss und ihn bei seiner beabsichtigten Aufgabe zu unterstützen. Anders ausgedrückt, sollte das Design den Benutzer dazu bemächtigen seine Aufgabe leichter zu erledigen. Das bedeutet nicht nur, dass die passende Funktionalität vom System her gegeben ist, sondern auch das diese leicht erreichbar ist. Dies ist gemeint, im Sinne von Aktionen die ein Nutzer ausführen muss um die gewünschte Aufgabe erledigen zu können.
+Zusätzlich zur Analyse der Funktionalität gibt es die Analyse der  Nutzererfahrung bei der Interaktion mit dem System. Das beinhaltet Aspekte wie die Zufriedenheit des Nutzers mit dem System, wie einfach es zu erlernen ist oder eben die Usability. Weiterführende Punkte können auch den Spaßfaktor und emotionale Reaktionen umfassen, speziell bei Systemen welche zur Unterhaltung oder Entspannung gedacht sind. 
+Das dritte Ziel von Evaluationen, ist Probleme mit dem Design zu identifizieren. Das können Ausprägungen sein wie, unvorhergesehenes Verhalten von bestimmten Funktionen des Designs oder Funktionen welche den Nutzer verwirren. Die beiden erstgenannten Ziele, Funktionalität und Usability des Designs, haben natürlich Einfluss auf dieses Ziel. Trotzdem ist dies ein eigenständiges Ziel, da es sich spezifisch auf die Identifikation von Fehlerquellen und Konflikten bezieht, welche dann korrigiert werden können.
+
+\subsection{Evaluationstechniken basierend auf Expertenanalyse} % (fold)
+\label{sub:evaluationstechniken_basierend_auf_expertenanalyse}
+Evaluationen 
+% subsubsection evaluationstechniken_basierend_auf_expertenanalyse (end)
+\iffalse
 Neben der Unterteilung in diese drei Bereiche, gibt es eine weitere Dimension bei einer Evaluierung, die Art wie eine Evaluierung aufgebaut ist. Auch hier wird zwischen drei möglichen Typen unterschieden:
 
 \begin{itemize}
   \item Formales Experiment, als formales Experiment bezeichnet man den Vorgang in dem von den Nutzern verlangt wird eine bestimmte Aufgabe, oder auch verschiedene, auszuführen unter Zuhilfenahme der zu untersuchenden Werkzeuge oder Methoden. 
   \item Fallstudie, hier wird jede Methode oder jedes Werkzeug in einem Projekt aus der Praxis getestet. Dabei werden die Standardentwicklungsprozeduren der evaluierenden Organisation verwendet.
   \item Umfrage, Nutzer welche zuvor bestimmte Methoden oder Werkzeuge verwendet haben werden nach Ihren Erfahrungen mit diesen befragt. Die Informationen der Benutzer können dann mit statistischen Techniken analysiert werden.
+
+  \TODO{Add expert eval approaches from eval techniques in HCI Book, nochmal schauen in kitchenham wegen weiteren sachen}
 \end{itemize}
 
 \TODO{Korf: Anforderungen an diese Methoden und was kann man daraus gewinnen}
 
 Die genannten Bereiche können mit verschiedensten Typen der Evaluation kombiniert werden.
-
+\fi
 \iffalse
 4. Qualitative screening: A feature-based evaluation done by a  single individual who not only determines the features to be assessed and their rating scale but also does the assessment. For  initial screening, the evalua- tions are usually based  on literature describing the soft- ware method/tools rather than actual use of the meth- ods/too KITCHENHAM1
 
@@ -292,6 +320,8 @@ Die vorgegebene Taxonomie bietet einen guten Einstiegs- und Orientierungspunkt i
 \chapter{Evaluationsbasis} % (fold)
 \label{cha:evaluationsbasis}
 In den letzten 20 Jahren beschäftigten sich über 80\% der Evaluationen bezüglich der Visualisierung und ihrer Werkzeuge mit den sich ergebenden Bildern und mit der Performance der verwendeten Algorithmen. Allerdings lassen mehr und mehr Evaluationen Teilnehmer in ihren Studien partizipieren. Von den Teilnehmern wird dann die Leistungen sowie das subjektive Feedback Evaluiert oder es wird ihre (verbesserte) Performance mit der Visualisierung und in der Analyse, als auch bei der Fähigkeit zur Schlussfolgerung berücksichtigt \cite{isenberg_systematic_2013}. 
+
+Die Wahl der Art der Evaluation ist entscheidend, weil diese vorgibt in welcher Art und Weise die Ergebnisse genutzt werden können. Diese Entscheidung wird von mehreren Faktoren beeinträchtigt. Den Zielen welche mit der Methode erreicht werden sollen, die Umstände und Grenzen die der Evaluationsaufgabe auferlegt sind und der Charakteristik der Objekte welche evaluiert werden sollen. Diese unterschiedlichen Faktoren interagieren miteinander was die Wahl der geeignetsten Evaluationsmethode schwierig gestaltet \cite{kitchenham_evaluating_1996-2}.
 
 Lam et al. haben in ihrer Ausarbeitung \cite{lam_empirical_2012} 850 Paper hinsichtlich möglicher Evaluierungsszenarien untersucht. Sie haben sieben verschiedene Szenarien ermittelt, welche sich in zwei grundlegende Kategorien aufteilen. Zum einen gibt es Szenarien, welche mit dem Verständnis der eigentlichen Visualisierungen beschäftigen, zum anderen solche die zum Nachvollziehen der Datenanalyse dienen. Besonders das Szenario aus der Datenanalyse \textbf{evaluating visual data analysis and reasoning (VDAR)} sticht für die angestrebte Arbeit heraus. Evaluationen in diesem Bereich fokussieren sich hauptsächlich darauf ob und wie ein Visualisierungswerkzeug visuelle Analysen und Schlussfolgerungen über Daten zulässt. Mögliche Ergebnisse sind hierbei sowohl Metriken (bspw. Anzahl der Analyseerkenntnisse), als auch subjektives Feedback (bspw. Umfrage über Datenanalysequalität). Meist werden in diesem Bereich Feldstudien genutzt, häufig in der Form von Fallstudien.
 
@@ -417,13 +447,13 @@ Werkzeuge mögliche Evaluierungsrichtungen:
 \end{itemize}
 % section automotive_spezifische_anforderungen (end)
 % chapter anforderungsanalyse (end)
-
+\iffalse
 \chapter{Auswahlkriterien} % (fold)
-\label{cha:auswahlkriterien}\iffalse
-\TODO{Das eher als section in Anforderungsanalyse?}\fi
+\label{cha:auswahlkriterien}
+\TODO{Das eher als section in Anforderungsanalyse?}
 Hier steht das Ergebnis der Anforderungsanalyse. Welche Anforderungen möchte ich anführen für eine Entwicklung von Visualisierungen und Visualisierungswerkzeugen im Fahrzeugnetzbereich.
 % chapter auswahlkriterien (end)
-
+\fi
 \chapter{Anwendungskonzepte und -bereiche} % (fold)
 \label{cha:anwendungskonzepte_und_bereiche}
 
