@@ -189,7 +189,7 @@ Das Kapitel \ref{cha:anwendungskonzepte_und_bereiche} beschreibt welche Anwendun
 
 \chapter{Einführung in das Umfeld} % (fold)
 \label{cha:umfeldanalyse}
-In der \nameref{cha:einleitung} wurde erläutert warum Visualisierungen für die Darstellung der Netzwerkkommunikationsdaten im Fahrzeug wichtig sind. Dieses Kapitel skizziert die Position dieser Arbeit im Bezug auf das wissenschaftliche Umfeld. Der Kernbereich beschäftigt sich mit Visualisierungen aus dem Automotive Bereich. Im speziellen mit Darstellungen für die Kommunikationsdaten und deren Metriken im modernen Automotive Realtime Ethernet. Neben diesem Hauptbereich gibt es mehrere weitere angrenzende Themen die für die Arbeit von Bedeutung sind. In der folgenden Übersicht \ref{fig:theme_overview} sind diese Bereiche dargestellt. Das Umfeld ist im Wesentlichen in drei Teile gegliedert, Evaluation, Werkzeuge und Visualisierungen sowie Anforderungen und die Analyse dieser. 
+In der \nameref{cha:einleitung} wurde erläutert warum Visualisierungen für die Darstellung der Netzwerkkommunikationsdaten im Fahrzeug wichtig sind. Dieses Kapitel skizziert die Position dieser Arbeit im Bezug auf das wissenschaftliche Umfeld. Der Kernbereich beschäftigt sich mit Visualisierungen aus dem Automotive Bereich. Im speziellen mit Darstellungen für die Kommunikationsdaten und deren Metriken im modernen Automotive Realtime Ethernet. Neben diesem Hauptbereich gibt es mehrere weitere angrenzende Themen, die für die Arbeit von Bedeutung sind. In der folgenden Übersicht \ref{fig:theme_overview} sind diese Bereiche dargestellt. Das Umfeld ist im Wesentlichen in drei Teile gegliedert, Evaluation, Werkzeuge und Visualisierungen sowie Anforderungen und die Analyse dieser. 
 
 \begin{figure}[htbp]
   \centering
@@ -198,10 +198,10 @@ In der \nameref{cha:einleitung} wurde erläutert warum Visualisierungen für die
   \label{fig:theme_overview}
 \end{figure}
 
-Im Abschnitt \ref{sec:grundlagen_der_evaluation_sowie_evaluationseigenschaften} wird benannt welche grundlegenden Evaluationen es gibt und stellt diese vor. Es wird die Vorarbeit für das Kapitel \nameref{cha:evaluationsbasis} geleistet, welches die geeignetste Technik für die Visualisierung von Netzwerkdaten im Fahrzeugnetz herausarbeitet. Abschnitt \ref{sec:visualisierungen_und_werkzeuge} beschreibt die Notwendigkeit der Betrachtung von Visualisierungen und Werkzeugen nicht nur aus dem Automotive Bereich sondern auch aus angrenzenden Bereichen. Der Abschnitt befasst sich weiterhin damit welches diese Bereiche sind und warum diese in Frage kommen. Der abschließende Teil dieses Kapitels, \nameref{sec:anforderungen_und_analyse}, geht auf die Anforderungen an Visualisierungen ein. Es wird \dots 
+Im Abschnitt \ref{sec:grundlagen_der_evaluation} wird benannt welche grundlegenden Evaluationen es gibt und stellt diese vor. Es wird die Vorarbeit für das Kapitel \nameref{cha:evaluationsbasis} geleistet, welches die geeignetste Technik für die Visualisierung von Netzwerkdaten im Fahrzeugnetz herausarbeitet. Abschnitt \ref{sec:visualisierungen_und_werkzeuge} beschreibt die Notwendigkeit der Betrachtung von Visualisierungen und Werkzeugen nicht nur aus dem Automotive Bereich sondern auch aus angrenzenden Bereichen. Der Abschnitt befasst sich weiterhin damit welches diese Bereiche sind und warum diese in Frage kommen. Der abschließende Teil dieses Kapitels, \nameref{sec:anforderungen_und_analyse}, geht auf die Anforderungen an Visualisierungen ein. Es wird \dots 
 
-\section{Grundlagen der Evaluation sowie Evaluationseigenschaften} % (fold)
-\label{sec:grundlagen_der_evaluation_sowie_evaluationseigenschaften}
+\section{Grundlagen der Evaluation} % (fold)
+\label{sec:grundlagen_der_evaluation}
 Im Bereich der Evaluation beschäftigt sich die Arbeit mit der Frage welche Techniken zur Evaluation sinnvoll in diesem Themenkomplex einsetzbar sind. Es wird herausgearbeitet welche Evaluationsmöglichkeiten es gibt und welche, aufgrund Ihrer Ergebnisse und Anwendungsgebiete, am geeignetsten erscheinen. Dieser Abschnitt zeigt grundlegende Evaluationsmethoden und deren Anforderungen sowie nutzen. Im Folgekapitel wird dann eine der vorgestellten Methoden ausgewählt und als Grundlage für die Literaturanalyse verwendet.
 Bevor die Techniken zur Evaluation vorgestellt werden, folgt zunächst ein Einblick wie zwischen Evaluationen differenziert wird, weshalb Evaluation verwendet wird und was damit erreicht werden soll.
 
@@ -239,8 +239,68 @@ Das dritte Ziel von Evaluationen, ist Probleme mit dem Design zu identifizieren.
 
 \subsection{Evaluationstechniken basierend auf Expertenanalyse} % (fold)
 \label{sub:evaluationstechniken_basierend_auf_expertenanalyse}
-Evaluationen 
+
+Idealerweise beginn die Evaluation bei Software, Design oder Projekten bereits bevor jegliche Implementation stattfindet, also in der Design- und Entwicklungsphase. Wenn bereits das Design selbst evaluiert wird, können schwerwiegende und möglicherweise kostenintensive Fehler vermeidet werden. Denn so kann das Design noch angepasst werden bevor zu viele Ressourcen darauf verwendet werden. Typischerweise sind Designfehler umso teurer je später im Entwicklungsprozesses sie entdeckt werden und damit die Wahrscheinlichkeit geringer das diese korrigiert werden können. Allerdings sind regelmäßige Usertests während der Entwicklungsphase teuer und es ist kann sich als schwierig erweisen eine akkurate Bewertung der Interaktionserfahrung der User über ein nicht vollständiges System zu bekommen. Die Konsequenz daraus ist, dass einige Methoden entwickelt wurden um Systeme von Experten evaluieren zu lassen. Diese wiederum können nicht nur verwendet werden um während der Entwicklung bewertend einzugreifen, sondern auch nach der Veröffentlichung um eine Qualitäts- oder Eignungsbewertung vorzunehmen. Im Grunde können diese Methoden zu jedem möglichem Zeitpunkt im Entwicklungsprozess eingesetzt werden, von der Spezifikation des Designs über Prototypen sowie eben auch vollständigen Implementationen, was sie zu einem sehr flexiblem Ansatz zur Evaluation macht. Der Aspekt, der Flexibilität und der Möglichkeit vollwertige Implementationen zu untersuchen, ist besonders relevant für diese Arbeit. Es unterstützt den Ansatz der Arbeit bestehende Visualisierungen auf ihre Eignung zur Darstellung von Netzwerkkommunikationsdaten im Automotive Ethernet Netzwerk zu präsentieren. Die Möglichkeit der Evaluation während der Entwicklung hingegen nicht weiter betrachtet, da diese nicht relevant ist. Expertenanalysen hängen davon ab, dass Designer, Analysten oder Domänenexperten, Design und Darstellungen betrachten und bewerten wie sich dieses auf den typischen User auswirkt. Die grundlegende Intension ist Teile der Software oder des Designs beziehungsweise der Visualisierungen zu identifizieren welche sich nicht an Kognitive Prinzipien halten oder bestätigte empirische Untersuchungen ignorieren. Was diese Methoden nicht betrachten ist die tatsächliche Nutzung des Systems, es kann nur analysiert werden ob Usability Standards eingehalten werden.
+Nachfolgend werden aus dem Bereich der Expertenanalyse folgende Ansätze vorgestellt: 
+
+\begin{itemize}
+  \item \nameref{ssub:cognitive_walkthrough}
+  \item \nameref{ssub:heuristische_evaluation}
+  \item \nameref{ssub:modellbasierte_evaluation}
+  \item \nameref{ssub:verwendung_von_vorangegangenen_studien}
+\end{itemize}
+
+\subsubsection{Cognitive walkthrough} % (fold)
+\label{ssub:cognitive_walkthrough}
+
+% subsubsection cognitive_walkthrough (end)
+
+\subsubsection{Heuristische Evaluation} % (fold)
+\label{ssub:heuristische_evaluation}
+Vorgestellt wurde die heuristische Evaluation von Nielsen und Molich \cite{nielsen_heuristic_1990} 1990. Es handelt sich dabei um eine Usability Untersuchung in welcher jedes Element eines User Interfaces auf bestimmte Usability-Prinzipien hin untersucht wird. Bevor diese Prinzipien entwickelt wurden, wurde die Heuristische Evaluation, im Allgemeinen, basierend auf Intuition und allgemein anerkannten Methoden aufgebaut. Da Heuristische Evaluation bereits auf Design Spezifikationen angewendet werden kann eignet es sich bereits zur Auswertung von frühen Designphasen. Allerdings kann diese Art der Evaluation auch auf Prototypen, Konzepte und bereits voll funktionsfähige Systeme angewendet werden. Daher ist Heuristische Evaluation ein flexibler und günstiger Ansatz. Aufgrund dieser Attribute wird es auch häufig als Discount Usability Methode bezeichnet \cite{kane_finding_2003}\cite{nielsen_usability_1994}.
+Generell gibt es bei Heuristischer Evaluation die Vorgabe dass mehrere Auswerter  ein System, unabhängig von einander, beurteilen und mögliche Usabilityprobleme aufzeigen. Es ist entscheidend das es mehrere Auswerter gibt und auch das diese unabhängig von einander dass System evaluieren. Nielsen fand in seiner Abhandlung heraus das drei bis fünf Auswerter ausreichend sind. Bei einer Anzahl von fünf Auswertern, werden im Schnitt 75\% aller Usabilityprobleme gefunden. Wohingegen einzelne Auswerter nur zwischen 20 und 51\% finden konnten, bei mehr als zehn Auswertern ist keine Steigerung der gefundenen Usabilityprobleme mehr zu erkennen.
+Um die Auswerter bei der Evaluation zu unterstützen gibt es zehn vorgegebene Heuristiken \cite{nielsen_usability_1994}. Diese können, wenn nötig, um Domänenspezifische Heuristiken ergänzt werden. Für die Darstellung von Netzwerkdaten im Automotive Ethernet Bereich, wären beispielsweise \textit{Erkennbarkeit einschlägiger Metriken} eine mögliche Ergänzung. 
+Jeder Auswerter bewertet das System und notiert jeden Verstoß gegen eine der vorgegebenen Heuristiken, welcher ein potentielles Usabilityproblem aufzeigt. Zu jedem Fund wird die schwere des Problems oder des Verstoßes festgehalten. Diese Einschätzung basiert auf vier Faktoren.
+
+\begin{enumerate}
+  \item Wie häufig tritt das Problem auf
+  \item Wie einfach ist es für den User dieses zu überwinden
+  \item Tritt es einmalig auf oder ist es reproduzierbar
+  \item Als wie schwer wird das Problem wahrgenommen
+\end{enumerate}
+
+Diese werden auf einer Skala von 0 - 4 bewertet. 
+
+\begin{itemize}
+  \item[] 0 = Es ist kein Usabilityproblem
+  \item[] 1 = Kosmetisches Problem, nicht zwingend zu bearbeiten
+  \item[] 2 = kleines Usabilityproblem, niedrige Priorität
+  \item[] 3 = großes Usabilityproblem, hohe Priorität
+  \item[] 4 = kritisches Usabilityproblem, muss vor Veröffentlichung gelöst werden 
+\end{itemize}
+
+Die zehn oben angesprochenen Heuristiken sind:
+
+\begin{enumerate}
+  \item 
+\end{enumerate}
+
+Zusammenfassend...
+Heuristic evaluation involves having a small set of evaluators examine the interface and judge its compliance with recognized usability principles (the "heuristics").
+
+% subsubsection heuristische_evaluation (end)
+
+\subsubsection{Modellbasierte Evaluation} % (fold)
+\label{ssub:modellbasierte_evaluation}
+
+% subsubsection modellbasierte_evaluation (end)
+
+\subsubsection{Verwendung von vorangegangenen Studien} % (fold)
+\label{ssub:verwendung_von_vorangegangenen_studien}
+
+% subsubsection verwendung_von_vorangegangenen_studien (end)
 % subsubsection evaluationstechniken_basierend_auf_expertenanalyse (end)
+
 \iffalse
 Neben der Unterteilung in diese drei Bereiche, gibt es eine weitere Dimension bei einer Evaluierung, die Art wie eine Evaluierung aufgebaut ist. Auch hier wird zwischen drei möglichen Typen unterschieden:
 
@@ -255,8 +315,7 @@ Neben der Unterteilung in diese drei Bereiche, gibt es eine weitere Dimension be
 \TODO{Korf: Anforderungen an diese Methoden und was kann man daraus gewinnen}
 
 Die genannten Bereiche können mit verschiedensten Typen der Evaluation kombiniert werden.
-\fi
-\iffalse
+
 4. Qualitative screening: A feature-based evaluation done by a  single individual who not only determines the features to be assessed and their rating scale but also does the assessment. For  initial screening, the evalua- tions are usually based  on literature describing the soft- ware method/tools rather than actual use of the meth- ods/too KITCHENHAM1
 
 \begin{itemize}
@@ -267,7 +326,12 @@ the current state-of-the-art systems or techniques.
 \TODO{...}
 \TODO{Beispiele}
 \fi
-% section grundlagen_der_evaluation_sowie_evaluationseigenschaften (end)
+
+\subsection{Evaluationstechniken mit Nutzerbeteiligung} % (fold)
+\label{sub:evaluationstechniken_mit_nutzerbeteiligung}
+
+% subsection evaluationstechniken_mit_nutzerbeteiligung (end)
+% section grundlagen_der_evaluation (end)
 
 \section{Einführung in grundlegende Visualisierungen und Werkzeuge} % (fold)
 \label{sec:visualisierungen_und_werkzeuge}
@@ -327,25 +391,27 @@ Lam et al. haben in ihrer Ausarbeitung \cite{lam_empirical_2012} 850 Paper hinsi
 
 
 \iffalse
-
 Wie Eval andere? -> Kriterien / Nutzen?
 
 Aus verschiedenen Evaluationsmöglichkeiten ergeben sich verschiedene Anforderungen
 
 Evaluierungsszenarien und Evaluierungspraktiken
-
 \fi
 
-\section{Evaluationsansätze} % (fold)
-\label{sec:evaluationsansätze}
-dies sind die Ansätze die es so gibt
+\section{Häufig verwendete Evaluationen im Bereich Visualisierung} % (fold)
+\label{sec:häufig_verwendete_Evaluationen im Bereich Visualisierung}
+Visualisierung/Automotive/Angrenzede
+% section häufig_verwendete_Evaluationen im Bereich Visualisierung (end)
 
-% section evaluationsansätze (end)
-\section{Entscheidung für Evaluationsansatz} % (fold)
-\label{sec:entscheidung_für_evaluationsansatz}
+\section{Faktoren zur Abgrenzung der Evaluationstechniken} % (fold)
+\label{sec:Faktoren zur Abgrenzung der Evaluationstechniken}
+
+% section Faktoren zur Abgrenzung der Evaluationstechniken (end)
+
+\section{Entscheidung für Evaluation} % (fold)
+\label{sec:entscheidung_für_Evaluation}
 dieser oder die Kombi aus diesen ist für Automotive am besten weil! Und dieser wird für die Literaturanalyse bzw. Analyse von bestehenden Visualisierungen und Werkzeugen verwendet.
-
-% section entscheidung_für_evaluationsansatz (end)
+% section entscheidung_für_Evaluation (end)
 % chapter evaluationsbasis (end)
 
 \chapter{Literaturauswertung} % (fold)
