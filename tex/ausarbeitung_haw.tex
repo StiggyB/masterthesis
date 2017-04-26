@@ -100,8 +100,8 @@
 %%%%%
 %% customize (see readme.pdf for supported values)
 \HAWThesisProperties{Author={Benjamin Burchard}
-                    ,Title={Evaluation und Analyse von Visualisierungen und Visualisierungswerkzeugen für die Ethernet Netzwerkkommunikation im Fahrzeug}
-                    ,EnglishTitle={Evaluation and analysis of visualisation tools and technics for ethernet network communication in vehicles}
+                    ,Title={Evaluation und Analyse von Visualisierungen und Visualisierungswerkzeugen für Ethernet Netzwerkkommunikationsdaten im Fahrzeug}
+                    ,EnglishTitle={Evaluation and analysis of visualisation tools and technics for ethernet network communicationdata in vehicles}
                     ,ThesisType={Master Arbeit}
                     ,ExaminationType={Master Ausarbeitung}
                     ,DegreeProgramme={Master of Science Informatik}
@@ -250,15 +250,10 @@ Nachfolgend werden aus dem Bereich der Expertenanalyse folgende Ansätze vorgest
   \item \nameref{ssub:verwendung_von_vorangegangenen_studien}
 \end{itemize}
 
-\subsubsection{Cognitive walkthrough} % (fold)
-\label{ssub:cognitive_walkthrough}
-
-% subsubsection cognitive_walkthrough (end)
-
 \subsubsection{Heuristische Evaluation} % (fold)
 \label{ssub:heuristische_evaluation}
 Vorgestellt wurde die heuristische Evaluation von Nielsen und Molich \cite{nielsen_heuristic_1990} 1990. Es handelt sich dabei um eine Usability Untersuchung in welcher jedes Element eines User Interfaces auf bestimmte Usability-Prinzipien hin untersucht wird. Bevor diese Prinzipien entwickelt wurden, wurde die Heuristische Evaluation, im Allgemeinen, basierend auf Intuition und allgemein anerkannten Methoden aufgebaut. Da Heuristische Evaluation bereits auf Design Spezifikationen angewendet werden kann eignet es sich bereits zur Auswertung von frühen Designphasen. Allerdings kann diese Art der Evaluation auch auf Prototypen, Konzepte und bereits voll funktionsfähige Systeme angewendet werden. Daher ist Heuristische Evaluation ein flexibler und günstiger Ansatz. Aufgrund dieser Attribute wird es auch häufig als Discount Usability Methode bezeichnet \cite{kane_finding_2003}\cite{nielsen_usability_1994}.
-Generell gibt es bei Heuristischer Evaluation die Vorgabe dass mehrere Auswerter  ein System, unabhängig von einander, beurteilen und mögliche Usabilityprobleme aufzeigen. Es ist entscheidend das es mehrere Auswerter gibt und auch das diese unabhängig von einander dass System evaluieren. Nielsen fand in seiner Abhandlung heraus das drei bis fünf Auswerter ausreichend sind. Bei einer Anzahl von fünf Auswertern, werden im Schnitt 75\% aller Usabilityprobleme gefunden. Wohingegen einzelne Auswerter nur zwischen 20 und 51\% finden konnten, bei mehr als zehn Auswertern ist keine Steigerung der gefundenen Usabilityprobleme mehr zu erkennen.
+Generell gibt es bei Heuristischer Evaluation die Vorgabe dass mehrere Auswerter ein System, unabhängig von einander, beurteilen und mögliche Usabilityprobleme aufzeigen. Es ist entscheidend das es mehrere Auswerter gibt und auch das diese unabhängig von einander dass System evaluieren. Nielsen fand in seiner Abhandlung heraus das drei bis fünf Auswerter ausreichend sind. Bei einer Anzahl von fünf Auswertern, werden im Schnitt 75\% aller Usabilityprobleme gefunden. Wohingegen einzelne Auswerter nur zwischen 20 und 51\% finden konnten, bei mehr als zehn Auswertern ist keine Steigerung der gefundenen Usabilityprobleme mehr zu erkennen.
 Um die Auswerter bei der Evaluation zu unterstützen gibt es zehn vorgegebene Heuristiken \cite{nielsen_usability_1994}. Diese können, wenn nötig, um Domänenspezifische Heuristiken ergänzt werden. Für die Darstellung von Netzwerkdaten im Automotive Ethernet Bereich, wären beispielsweise \textit{Erkennbarkeit einschlägiger Metriken} eine mögliche Ergänzung. 
 Jeder Auswerter bewertet das System und notiert jeden Verstoß gegen eine der vorgegebenen Heuristiken, welcher ein potentielles Usabilityproblem aufzeigt. Zu jedem Fund wird die schwere des Problems oder des Verstoßes festgehalten. Diese Einschätzung basiert auf vier Faktoren.
 
@@ -284,44 +279,76 @@ Die zehn oben angesprochenen Heuristiken sind:
 \begin{enumerate}
   \item \textbf{Simple und natürliche Dialoge:} Dialoge sollten keine Informationen enthalten, welche irrelevant sind oder kaum verwendet werden. Jedes zusätzliche Informationselement in einem Dialog, konkurriert mit den relevanten Informationselementen und mindert deren relative Sichtbarkeit. Alle Informationen sollten in einer natürlichen und logischen Reihenfolge auftreten.
   \item \textbf{Dem User verständliche Sprache nutzen:} Dialoge sollten klar, in Worten, Sätzen und Konzepten die dem User bekannt sind, ausgedrückt werden, jedoch nicht in eher systemnahen Ausdrücken.
-  \item \textbf{Minimierung der Gedächtnisbelastung}
-  \item \textbf{Konsistenz}
-  \item \textbf{Feedback}
-  \item \textbf{Klar markierte \textit{Ausgänge}}
-  \item \textbf{Abkürzungen}
-  \item \textbf{Gute Fehlermeldungen}
-  \item \textbf{Fehler vermeiden}
-  \item \textbf{Hilfe und Dokumentation}
+  \item \textbf{Minimierung der Gedächtnisbelastung:} Der Nutzer sollte sich keine Informationen Dialogübergreifend merken müssen. Anleitungen zur Nutzung des Systems, sollten jederzeit sichtbar oder einfach aufrufbar gemacht werden, dort wo es angebracht ist.
+  \item \textbf{Konsistenz:} Nutzer sollten sich nicht fragen müssen ob mit einem unterschiedlichen Ausdrücken, Situationen oder Aktionen das Gleiche gemeint ist.
+  \item \textbf{Feedback:} Das System sollte dem Nutzer zu jeder Zeit, ausreichend und innerhalb einer angemessenen Zeitspanne, Feedback geben um den Status des Programms einschätzen zu können. 
+  \item \textbf{Klar markierte \textit{Ausgänge}:} Es kommt häufig vor das Nutzer Systemfunktionen ohne Intension auswählen. In diesen Situationen muss es ein klar markierter \textit{Ausgang}, um den ungewünschten Status verlassen zu können, vorhanden sein. 
+  \item \textbf{Abkürzungen:} Diese stellen Beschleunigungen für den erfahrenen Benutzer dar. Beispielsweise können Tastenkombinationen für Aktionen bereitgestellt werden, welche den Arbeitsablauf beschleunigen.  Diese Funktionen für erfahrenere Nutzer, sollten nicht auf den ersten Blick sichtbar sein, um einen Anfänger nicht zu verwirren.
+  \item \textbf{Gute Fehlermeldungen:} Fehlermeldungen sollten klar in Spreche ausgedrückt werden, nicht in Codes. Es soll das Problem präzise beschrieben werden und konstruktive, im besten Fall, dass Problem lösende, Informationen enthalten.
+  \item \textbf{Fehler vermeiden:} Besser als gute Fehlermeldungen ist, wenn Fehler gar nicht erst auftreten. Ein durchdachtes Systemdesign kann eine Vielzahl an einfachen Fehlern abfangen.
+  \item \textbf{Hilfe und Dokumentation:} Im Idealfall benötigt ein Benutzer keine Hilfestellung für die Nutzung eines Systems. Da das nicht auf jede Person und jedes System zutreffen kann sollte es eine Hilfefunktion sowie eine Dokumentation geben. Die dort enthaltenen Informationen sollten einfach erreichbar, leicht zu durchsuchen, mit der aktuellen Nutzertätigkeit verbunden, konkrete Schritte zur Lösung bereithalten und nicht zu Überladen, also kompakt, sein.
 \end{enumerate}
 
-Zusammenfassend...
-Heuristic evaluation involves having a small set of evaluators examine the interface and judge its compliance with recognized usability principles (the "heuristics").
-
+Nach dem Abschluss der separaten Bewertung durch die Experten, werden alle erkannten Probleme gesammelt und die durchschnittliche Bewertung errechnet. Daraufhin wird festgelegt welches das wichtigste Problem ist und somit als erstes der Aufmerksamkeit im Sinne der Problemlösung bedarf.
+Zusammenfassend beinhaltet die Heuristische Evaluation als eine kleine Gruppe von Auswertern welche das Interface, Design oder Darstellungen untersuchen und diese auf ihre Tauglichkeit mit Blick auf die Usabilityprinzipien (die Heuristiken) bewerten.
 % subsubsection heuristische_evaluation (end)
+
+\subsubsection{Cognitive Walkthrough} % (fold)
+\label{ssub:cognitive_walkthrough}
+Cognitive Walkthrough (CW) ist eine Methode, ursprünglich vorgestellt von Lewis et. al. \cite{lewis_testing_1990}, um systematisch Features eines Interfaces im theoretischem Kontext zu bewerten. Der Ursprung des Cognitive Walkthrough Ansatzes ist der Code Walkthrough, bekannt aus dem Software Engineering Bereich. In Walkthroughs werden detailliert Sequenzen von Aktionen betrachtet. Im Code Walkthrough ist eine Sequenz repräsentiert durch einen Teil des Programmcodes, durch welchen dann schrittweise iteriert wird. Dabei wird auf bestimmte Charakteristiken geachtet, wie beispielsweise Coding Style oder Code Conventions. Beim Cognitive Walkthrough ist die Aktionssequenz beschrieben als, die Schritte die ein Nutzer vollführen muss um im vorgegebenen Interface eine bestimmte Aufgabe zu erledigen. Die Rezensenten gehen dann die Aktionssequenz Schritt für Schritt durch und achten auf mögliche Usabilityprobleme. Hauptsächlich fokussiert sich die CW Methode darauf, festzustellen wie einfach ein System zu erlernen ist. Dabei liegt ein spezieller Fokus darauf wie leicht es ist, dass System explorativ zu erlernen. Diese Methode wird von der Mehrheit von Nutzern vorgezogen, es ist einfacher das System zu testen und dabei zu lernen, als zunächst eine Anleitung oder spezielles Training zu absolvieren \cite{franzke1994exploration}. Für jeden Schritt wird festgehalten warum dieser Schritt gut oder nicht gut für einen neuen Nutzer ist. Diese Rückmeldungen sind sogenannte \grqq success stories\grqq{} beziehungsweise \grqq failure stories\grqq. Um einen solchen Cognitive Walkthrough durchzuführen sind vier Anforderungen zu erfüllen.
+
+\begin{enumerate}
+  \item Eine Spezifikation oder einen Prototypen des Systems. Alle möglichen Angaben dazu sollten sehr detailliert sein. Details beim Wortlaut oder der Position eines Menüs oder Steuerelements können große Unterschiede machen. 
+  \item Eine Beschreibung der Aufgabe die ein Nutzer in dem System ausführen soll. Diese Aufgabe sollte repräsentativ gewählt werden, also etwas das jeder Nutzer tun muss.
+  \item Eine komplette Auflistung aller Aktionen die ausgeführt werden müssen um die Aufgabe im vorgegebenen System zu erfüllen.
+  \item Eine Angabe über die Zielgruppe. Wer wird das System nutzen und wie viel Erfahrung und Vorwissen kann von diesen Nutzern erwartet werden. 
+\end{enumerate}
+
+Mit diesen Informationen kann der Experte, die in Punkt 3 beschriebene Aktionssequenz durchlaufen und Anhand dieser die Usability dieses Teils bewerten. Um zu eine Bewertung zu gelangen, werden vier Fragen für jede Aktion der Sequenz beantwortet.
+
+\begin{enumerate}
+  \item Stimmt der Effekt der Aktion mit den Zielen des Nutzers zum gegebenen Zeitpunkt überein? Jede Aktion eines Nutzers hat einen bestimmten Effekt innerhalb des Systems. Trägt dieser Effekt tatsächlich dazu bei das der Nutzer dem Ziel näher kommt? Beispielsweise wenn der Effekt der Aktion ist ein PDF einer Darstellung zu speichern, ist dass auch tatsächlich was der Nutzer in diesem Moment tun möchte?
+  \item Ist es dem Nutzer möglich, zu sehen das die Aktion verfügbar ist? Können Nutzer den Button oder das Menüelement sehen welches die gewünschte Aktion ausführt? Diese Frage soll nicht beantworten ob der User erkennt das die Funktion diejenige ist die er benötigt, sondern ob diese Sichtbar ist zu dem Zeitpunkt wenn die Aktion ausgeführt werden soll. Menüelemente oder Buttons könnten sich zum Beispiel in Untermenüs befinden.
+  \item Wenn der Nutzer die korrekte Aktion gefunden hat, wird er in der Lage sein zu erkennen das dies genau die Aktion ist die tatsächlich benötigt wird? Diese Frage schließt an die vorherige Frage an. Die Frage nach der Sichtbarkeit ist unabhängig davon ob der Nutzer auch erkennt das dies auch die Aktion ist die ausgeführt werden muss um die gewünschte Aufgabe zu erfüllen. Diese Frage zielt darauf ab ob die Bedeutung und Effekt der Funktion klar sind, nicht auf die Sichtbarkeit.
+  \item Nachdem die Aktion ausgeführt wurde, wird dem Nutzer das gegebene Feedback verständlich sein? Wenn der Nutzer die korrekte Aktion ausgeführt hat, wird er auch darüber Informiert das dies die richtige Aktion war? Ist das Feedback ausreichend informativ? 
+\end{enumerate}
+
+Cognitive Walkthrough wurde auch an komplexe Interfaces angepasst, beispielsweise im Computer Aided Design (CAD) \cite{wharton_applying_1992} oder bei der Entwicklung von Medizinischen Geräten \cite{bliga_ard_enhanced_2013}. Die Methode wurde außerdem in der Evaluation von Betriebsabläufen eingesetzt \cite{novick_using_1999}.
+% subsubsection cognitive_walkthrough (end)
 
 \subsubsection{Modellbasierte Evaluation} % (fold)
 \label{ssub:modellbasierte_evaluation}
+Eine weitere Variante der Expertenanalyse ist die sogenannte Modellbasierte Evaluation \cite{kieras_human-computer_2003}. Dabei wird die Evaluation durchgeführt indem ein Modell genutzt wird welches darstellt, wie ein Mensch ein bestimmtes System nutzen würde. Aus diesem Modell werden Usabilitywerte prognostiziert, entweder mit Hilfe einer Simulation oder von Berechnungen. Diese Prognosen können empirische Messungen mit Hilfe von Nutzertests ersetzen oder unterstützen. Zusätzlich enthält das Modell selbst nützliche Informationen die Beziehung zwischen der Aufgabe des Nutzers und dem Design des Systems.
+Dieser Ansatz basiert auf einer detaillierten Beschreibung des voraussichtlichen Designs und einer detaillierten Aufgabenanalyse. Es erklärt wie die Nutzer Aufgaben erfüllen, wenn sie mit dem voraussichtlichem Interface interagieren. Mit Hilfe von psychologischer Theorie und parametrisierten Daten werden Usability Metriken generiert. Wenn das Modell erstellt ist können die Usability-Vorraussagen schnell und einfach mit Berechnungen oder Simulationen gewonnen werden.
+Es gibt drei vorherrschende Modellarten, GOMS (goals, operators, methodes and selection) Modelle, Task Network Modelle und Cognitive Architecture Modelle.
 
+\begin{enumerate}
+  \item Das GOMS Modell berechnet die Nutzerperformance für ein bestimmtes Interface im voraus. Über das Akronym lässt sich das Modell gut beschreiben. Der Nutzer kann bestimmte Ziele (\textbf{[G]oals}) mit dem System erreichen. Eingabeoperationen (\textbf{[O]perators}) sind die Hauptaktionen mit welchen mit dem System kommuniziert wird, gemeint sind hierbei Tastendrücke oder Mausklicks. Methoden (\textbf{[M]ethods}) sind Sequenzen von Eingabeoperationen welche, wenn sie ausgeführt werden, ein Ziel erreichen. Auswahlregeln (\textbf{[S]election rules}) beschreiben welche Methode in welcher Situation genutzt werden sollte um ein Ziel zu erreichen, falls mehr als eine Methode verfügbar ist.
+  \item Bei Task Network Modellen wird die Performance eines Tasks mit Hilfe von Netzwerkprozessen modelliert. Jeder Prozess startet wenn seine Vorgägerprozesse beendet wurden und hat eine angenommene Verteilung von Durchlaufzeiten. Dabei müssen Tasks oder Prozesse nicht zwingend vom User ausgeführt werden sonder können auch vom System ausgelöst werden. Die Performancevoraussagen werden mit Hilfe einer Monte-Carlo Simulation der Modellaktivität getätigt. In dieser Simulation werden die Inputevents von Zufallsvariablen oder von Taskszenarios generiert. Eine Vielzahl statistischer Ergebnisse werden dabei produziert, beispielsweise die Ressourcennutzung und die Auslastung des Systems.
+  \item Cognitive Architecture Modelle bestehen aus hypothetischen interagierenden Komponenten, dabei wird angenommen das diese sich im Menschen befinden. Diese Computersysteme simulieren einen Menschen welcher in einer Simulierten Umgebung, Input von dieser erhält und Output für diese generiert, worauf die Umgebung wieder reagiert. Die Tasks welche von dem Kognitiven Modell ausgeführt werden sollen, werden nach einer Taskanalyse in die Kognitive Komponente integriert. Da diese Systeme versuchen die physiologischen Funktionen des Menschen abzubilden sind diese komplex aufgebaut und werden eher in Grundlegenden Forschungsprojekten eingesetzt.
+\end{enumerate}
 % subsubsection modellbasierte_evaluation (end)
 
 \subsubsection{Verwendung von vorangegangenen Studien} % (fold)
 \label{ssub:verwendung_von_vorangegangenen_studien}
-
+Im Bereich der Human-Computer Interaction\nomenclature[]{HCI}{Human Computer Interaction} und der Experimentellen Psychologie gibt es viele Ergebnisse aus Experimenten und empirische Beweise. Einige davon können spezifisch einer Domäne zugeordnet werden, andre haben einen etwas weiter gefassten Ansatz. Diese bereits gewonnenen Informationen gehen von der Usability von speziellen Menütypen, über die Erinnerung an spezifische Kommandonamen, bis hin zu der Wahl von Darstellungen und deren Farben.
+Dieser Ansatz macht sich die bereits gewonnen Erkenntnisse zu nutze, indem vorherige Ergebnisse verwendet werden um die Wahl für ein bestimmtes Design oder eine Visualisierung zu stärken oder abzuschwächen. Es ist teurer Experimente zu wiederholen und die Rezension und Analyse bestehender Literatur kann dies obsolet machen. Es sollte dabei bedacht werden das experimentelle Ergebnisse möglicherweise nicht in beliebigen Kontext bestand haben. Ein Rezensent muss daher die Belege sorgfältig auswählen und dabei das experimentelle Design, die Population der Teilnehmer, die ausgeführten Analysen und gemachten Annahmen beachten. 
 % subsubsection verwendung_von_vorangegangenen_studien (end)
 % subsubsection evaluationstechniken_basierend_auf_expertenanalyse (end)
 
-\iffalse
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Neben der Unterteilung in diese drei Bereiche, gibt es eine weitere Dimension bei einer Evaluierung, die Art wie eine Evaluierung aufgebaut ist. Auch hier wird zwischen drei möglichen Typen unterschieden:
 
 \begin{itemize}
   \item Formales Experiment, als formales Experiment bezeichnet man den Vorgang in dem von den Nutzern verlangt wird eine bestimmte Aufgabe, oder auch verschiedene, auszuführen unter Zuhilfenahme der zu untersuchenden Werkzeuge oder Methoden. 
   \item Fallstudie, hier wird jede Methode oder jedes Werkzeug in einem Projekt aus der Praxis getestet. Dabei werden die Standardentwicklungsprozeduren der evaluierenden Organisation verwendet.
-  \item Umfrage, Nutzer welche zuvor bestimmte Methoden oder Werkzeuge verwendet haben werden nach Ihren Erfahrungen mit diesen befragt. Die Informationen der Benutzer können dann mit statistischen Techniken analysiert werden.
+  \item Umfrage, Nutzer welche zuvor bestimmte Methoden oder Werkzeuge verwendet haben werden nach Ihren Erfahrungen mit diesen befragt. Die Informationen der Benutzer können dann mit statistischen Techniken analysiert werden. 
 
   \TODO{Add expert eval approaches from eval techniques in HCI Book, nochmal schauen in kitchenham wegen weiteren sachen}
 \end{itemize}
 
-\TODO{Korf: Anforderungen an diese Methoden und was kann man daraus gewinnen}
+
 
 Die genannten Bereiche können mit verschiedensten Typen der Evaluation kombiniert werden.
 
@@ -334,11 +361,12 @@ the current state-of-the-art systems or techniques.
 \end{itemize}
 \TODO{...}
 \TODO{Beispiele}
-\fi
+\fi %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Evaluationstechniken mit Nutzerbeteiligung} % (fold)
 \label{sub:evaluationstechniken_mit_nutzerbeteiligung}
-
+Die im vorherigen Abschnitt beschriebenen Evaluationstechniken fokussieren sich auf die Ausführung durch den Designer oder Experten und nicht mit tatsächlichen Nutzern.
 % subsection evaluationstechniken_mit_nutzerbeteiligung (end)
 % section grundlagen_der_evaluation (end)
 
@@ -398,7 +426,7 @@ Die Wahl der Art der Evaluation ist entscheidend, weil diese vorgibt in welcher 
 
 Lam et al. haben in ihrer Ausarbeitung \cite{lam_empirical_2012} 850 Paper hinsichtlich möglicher Evaluierungsszenarien untersucht. Sie haben sieben verschiedene Szenarien ermittelt, welche sich in zwei grundlegende Kategorien aufteilen. Zum einen gibt es Szenarien, welche mit dem Verständnis der eigentlichen Visualisierungen beschäftigen, zum anderen solche die zum Nachvollziehen der Datenanalyse dienen. Besonders das Szenario aus der Datenanalyse \textbf{evaluating visual data analysis and reasoning (VDAR)} sticht für die angestrebte Arbeit heraus. Evaluationen in diesem Bereich fokussieren sich hauptsächlich darauf ob und wie ein Visualisierungswerkzeug visuelle Analysen und Schlussfolgerungen über Daten zulässt. Mögliche Ergebnisse sind hierbei sowohl Metriken (bspw. Anzahl der Analyseerkenntnisse), als auch subjektives Feedback (bspw. Umfrage über Datenanalysequalität). Meist werden in diesem Bereich Feldstudien genutzt, häufig in der Form von Fallstudien.
 
-
+\TODO{Korf: Anforderungen an diese Methoden und was kann man daraus gewinnen}
 \iffalse
 Wie Eval andere? -> Kriterien / Nutzen?
 
@@ -550,14 +578,23 @@ daraus ergibt sich (hoffentlich) ein völlig neuer Ansatz
 %% read the documentation for customizing the style
 \bibliographystyle{abbrv}
 \bibliography{ausarbeitung_haw}
+\clearpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   MANUAL NOMENCL COMMAND:                         %
+% pdfLaTeX demo.tex                                 %
+% makeindex demo.nlo -s nomencl.ist -o demo.nls     %
+% bibtex demo.aux                                   %
+% pdfLaTeX demo.tex                                 %
+% pdfLaTeX demo.tex                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \typeout{===== Section: nomenclature}
 %% uncomment if a TOC entry is needed
-%%\addcontentsline{toc}{chapter}{Glossar}
+\addcontentsline{toc}{chapter}{Glossar}
 \renewcommand{\nomname}{Glossar}
-\clearpage
 \markboth{\nomname}{\nomname} %% see nomencl doc, page 9, section 4.1
 \printnomenclature
+\clearpage
 
 %% index
 \typeout{===== Section: index}
