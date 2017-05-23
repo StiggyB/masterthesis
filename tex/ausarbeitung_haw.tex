@@ -35,6 +35,11 @@
 \usepackage{subcaption}       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Show subsubsection in TOC %
+%\setcounter{tocdepth}{3}    %
+%\setcounter{secnumdepth}{3} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %% define some colors
 \colorlet{BackgroundColor}{gray!20}
 \colorlet{KeywordColor}{blue}
@@ -100,13 +105,13 @@
 %%%%%
 %% customize (see readme.pdf for supported values)
 \HAWThesisProperties{Author={Benjamin Burchard}
-                    ,Title={Evaluation und Analyse von Visualisierungen und Visualisierungswerkzeugen für Ethernet Netzwerkkommunikationsdaten im Fahrzeug}
-                    ,EnglishTitle={Evaluation and analysis of visualisation tools and technics for ethernet network communicationdata in vehicles}
+                    ,Title={Evaluation und Analyse von Visualisierungstechniken für Kommunikationsdaten im Fahrzeug}
+                    ,EnglishTitle={Evaluation and analysis of visualisation techniques for communicationdata in a vehicle}
                     ,ThesisType={Master Arbeit}
                     ,ExaminationType={Master Ausarbeitung}
                     ,DegreeProgramme={Master of Science Informatik}
-                    ,ThesisExperts={Prof. Dr. Franz Korf}
-                    ,ReleaseDate={19. März 2017}
+                    ,ThesisExperts={Prof. Dr. Franz Korf \and Prof. Dr. Philipp Jenke}
+                    ,ReleaseDate={19. September 2017}
                   }
 
 %% title
@@ -176,14 +181,14 @@ Um geeignete Visualisierungen und Werkzeuge für das Themenfeld der Netzwerkkomm
 Diese Arbeit hat zum Ziel Evaluationstechniken in Hinblick auf deren Einsatzfähigkeit im Feld der Visualisierung von Fahrzeugkommunikationsdaten und deren Werkzeuge zu Analysieren. Unter Zuhilfenahme der erarbeiteten Evaluationstechniken wird spezifische Literatur ausgewertet. Damit ist gemeint das hier Literatur speziell aus dem Bereich der Netzwerkvisualisierung ausgewertet wird, mit Hauptaugenmerk auf die Darstellung von Kommunikationsdaten im Fahrzeug. Aus der Analyse der Literatur ergeben sich Anforderungen an Visualisierungen für den Automotive Bereich, welche Aufgearbeitet werden und somit eine Grundlage für die Entwicklung neuer Visualisierungssystemen und Werkzeuge bilden. 
 Somit ergeben sich mehrere konkrete Teilziele dieser Arbeit. Es werden geeignete Evaluationstechniken für die Analyse von Werkzeugen und Visualisierungen im Bereich der Visualisierung von Fahrzeugkommunikation erarbeitet. Es werden konkrete Anforderungen für zukünftige und aktuelle Darstellungsformen und die zugehörige Software zusammengestellt.
 
-\iffalse
+
 Es soll eine Evaluation von Informationssystemen und Visualisierungen stattfinden und deren Vergleich mit dem eigenen Prototypen (sowie dessen Erweiterung zu einem Informationssystem(?)). 
 
 \TODO{Auch noch Teile aus Einleitung AW2? Soll RT Ethernet und dass Fahrzeug mit einbezogen werden? Denke Ja.}
-\fi
 
-In Kapitel \ref{cha:umfeldanalyse} wird grob das wissenschaftliche und wirtschaftliche Umfeld umrissen. In drei Unterabschnitten werden hier die Grundlagen und angrenzenden Wissensbereiche dieser Arbeit beleuchtet. Es wird dargelegt inwiefern, nach einschlägiger Literatur, die Wahl der richtigen Evaluationsmethode die Qualität der Ergebnisse und der möglichen Schlussfolgerungen beeinflusst. Aktuelle und bewährte Konzepte der eingesetzten Ethernet Netzwerke, sowie deren Methoden zur Visualisierung von Kommunikationsdaten in Bereichen der Flugzeugtechnik, der Automatisierungstechnik sowie der \iffalse\TODO{Schiffstechnik? Bahn? }\fi werden erörtert, als auch die Anforderungen und die Analyse dieser betrachtet. \iffalse \TODO{Das vielleicht mit in Section Evaluation -> Section: Evaluation und Anforderungsanalyse} \TODO{oder: Evaluation und die Bedeutung für Schlussfolgerungen und Anforderungen}\fi
-Kapitel \ref{cha:evaluationsbasis} vergleicht verschiedene Evaluationstechniken und erläutert den Aufbau und die Herangehensweise dieser. Im Verlauf des Kapitels wird Aufgrund von verschiedenen Analysen anderer Wissenschaftlicher Ausarbeitungen eine Evaluationsmethode gewählt. Diese wird zur Evaluation für die im Kapitel \nameref{cha:literaturauswertung} vorgestellten akademischen Abhandlungen verwendet. Das oben genannte Kapitel \ref{cha:literaturauswertung} beinhaltet die erwähnte Literaturauswertung, mit Hilfe der erarbeiteten Evaluationstechnik werden diese Arbeiten aufgearbeitet. Das anschließende Kapitel \ref{cha:anforderungsanalyse} greift die in Kapitel \ref{cha:literaturauswertung} gewonnenen Erkenntnisse auf und es werden darauf basierend Anforderungen für die Darstellung von Netzwerkdaten im Fahrzeug-Ethernet erstellt. Aufgeteilt wird dieses Kapitel in drei Schritte. Zunächst werden allgemeingültige Anforderungen vorgestellt, gefolgt von Anforderungen speziell für den Visualisierungsbereich. Im Anschluss werden konkrete Anforderungen an Visualisierungen von Netzwerkdaten im Fahrzeug gestellt. \iffalse Kapitel \ref{cha:auswahlkriterien} \TODO{möglich in Kapitel 5 rein..} \fi
+\TODO{Revamp, makes not that much sense anymore:}
+In Kapitel \ref{cha:umfeldanalyse} wird grob das wissenschaftliche und wirtschaftliche Umfeld umrissen. In drei Unterabschnitten werden hier die Grundlagen und angrenzenden Wissensbereiche dieser Arbeit beleuchtet. Es wird dargelegt inwiefern, nach einschlägiger Literatur, die Wahl der richtigen Evaluationsmethode die Qualität der Ergebnisse und der möglichen Schlussfolgerungen beeinflusst. Aktuelle und bewährte Konzepte der eingesetzten Ethernet Netzwerke, sowie deren Methoden zur Visualisierung von Kommunikationsdaten in Bereichen der Flugzeugtechnik, der Automatisierungstechnik sowie der \TODO{Schiffstechnik? Bahn? } werden erörtert, als auch die Anforderungen und die Analyse dieser betrachtet.  \TODO{Das vielleicht mit in Section Evaluation -> Section: Evaluation und Anforderungsanalyse} \TODO{oder: Evaluation und die Bedeutung für Schlussfolgerungen und Anforderungen}
+Kapitel \ref{cha:evaluationsbasis} vergleicht verschiedene Evaluationstechniken und erläutert den Aufbau und die Herangehensweise dieser. Im Verlauf des Kapitels wird Aufgrund von verschiedenen Analysen anderer Wissenschaftlicher Ausarbeitungen eine Evaluationsmethode gewählt. Diese wird zur Evaluation für die im Kapitel \nameref{cha:evaluation_ausgewählter_visualisierungstechniken} vorgestellten akademischen Abhandlungen verwendet. Das oben genannte Kapitel \ref{cha:evaluation_ausgewählter_visualisierungstechniken} beinhaltet die erwähnte Literaturauswertung, mit Hilfe der erarbeiteten Evaluationstechnik werden diese Arbeiten aufgearbeitet. Das anschließende Kapitel \ref{cha:anforderungsanalyse} greift die in Kapitel \ref{cha:evaluation_ausgewählter_visualisierungstechniken} gewonnenen Erkenntnisse auf und es werden darauf basierend Anforderungen für die Darstellung von Netzwerkdaten im Fahrzeug-Ethernet erstellt. Aufgeteilt wird dieses Kapitel in drei Schritte. Zunächst werden allgemeingültige Anforderungen vorgestellt, gefolgt von Anforderungen speziell für den Visualisierungsbereich. Im Anschluss werden konkrete Anforderungen an Visualisierungen von Netzwerkdaten im Fahrzeug gestellt. \iffalse Kapitel \ref{cha:auswahlkriterien} \TODO{möglich in Kapitel 5 rein..} \fi
 Das Kapitel \ref{cha:anwendungskonzepte_und_bereiche} beschreibt welche Anwendungsmöglichkeiten sich aus der Anforderungsanalyse ergeben und wie, als auch wo, diese Kombiniert und eingesetzt werden können. Kapitel \ref{cha:zusammenfassung_und_fazit} schließt diese Arbeit mit einer Zusammenfassung und einem Fazit ab.
 % chapter einleitung (end)
 
@@ -373,26 +378,60 @@ Im wesentlichen gibt es zwei verschiedene Arten wie Evaluationen mit Nutzern aus
 Der zweite Typ, die Feldstudien, nimmt den Auswerter der Studie mit in den gewohnten Arbeitsbereich der Teilnehmer. Die Beobachtung wird hier erschwert durch viele mögliche Unterbrechungen (Anrufe, Umgebungsgeräusche oder nicht partizipierende Mitarbeiter) der gestellten Aufgabe oder Beurteilung. Jedoch ist auch hier genau das ebenso ein Vorteil, in der Arbeitsumgebung können gerade durch diese Ablenkungen, Situationen identifiziert werden welche der Nutzer in einer Laborumgebung nicht erfahren würde. So können Interaktionen zwischen System und Nutzer ausgemacht werden welche ebenso im Alltag auftreten können. 
 Im Allgemeinen lässt sich daraus schlussfolgern, dass Studien im Feld den Laborstudien vorgezogen werden sollten, da diese das System während der tatsächlichen Nutzung evaluieren. So können auch die angesprochenen Unterbrechungen von Vorteil sein, diese können beispielsweise unerwartetes Verhalten wie Speichern und Laden während einer Aufgabe aufdecken. 
 
-In den nachfolgenden Abschnitten werden diese Evaluationsbereiche mit Nutzerbeteiligung betrachtet:
+In den anschließenden Abschnitten werden folgende Evaluationsbereiche mit Nutzerbeteiligung betrachtet:
 
 \begin{itemize}
-  \item Empirische Methoden: Experimentelle Evaluation
-  \item Beobachtungstechniken
-  \item Befragungstechniken
-  \item Messung physiologischer Reaktionen 
+  \item \nameref{ssub:techniken_auf_grundlage_von_beobachtungen}
+  \item \nameref{ssub:empirische_techniken_auf_grundlage_von_experimenten}
+  \item \nameref{ssub:befragungstechniken}
 \end{itemize}
 
+\iffalse
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{img/user_part_isenberg.pdf}
   \caption{Histogramm der Studien im Bereich der Visualisierung mit Nutzerbeteiligung von 581 Arbeiten aus einem Zeitraum von zehn Jahren. Frei nach Isenberg et. al \cite{isenberg_systematic_2013}}
   \label{fig:no_of_users}
 \end{figure}
+\fi
 
-\subsection{Empirische Methoden: Experimentelle Evaluation} % (fold)
-\label{sub:empirische_methoden_experimentelle_evaluation}
+\subsubsection{Techniken auf Grundlage von Beobachtungen} % (fold)
+\label{ssub:techniken_auf_grundlage_von_beobachtungen}
+Eine weit verbreitete Methode um Informationen über die tatsächliche Benutzung eines Systems zu sammeln ist Nutzer bei der Bedienung des Systems zu beobachten. Dabei werden die Nutzer aufgefordert bestimmte Aufgaben mit dem Programm zu erledigen. Es ist jedoch auch möglich die Untersuchung am eigentlichen Arbeitsplatz durchzuführen, wobei die Nutzer ihren normalen Tätigkeiten nachgehen. Ein Auswerter beobachtet den User und zeichnet seine Aktionen auf. Zu Aufzeichnung stehen ihm verschiedenste Möglichkeiten zur Verfügung, welche in diesem Abschnitt näher beleuchtet werden. In den meisten Fällen ist einfaches Beobachten nicht genug um die Auswirkungen der Aktionen der User nachzuvollziehen, weshalb diese dazu angehalten werden während der Arbeit mit einem System laut auszusprechen welche Gedanken sie bei den Aktionen haben. Dies nennt man die \"Thinking Aloud\"-Methode. 
 
-% subsection empirische_methoden_experimentelle_evaluation (end)
+\paragraph{Thinking Aloud} % (fold)
+\label{par:thinking_aloud}
+Diese Methode ist eine psychologisches Experiment, durch welches die Benutzerfreundlichkeit eines Interfaces bestimmt werden kann. Grundsätzlich funktioniert Thinking Aloud so, dass ein Testsubjekt das System verwendet und dabei laut sagt was es denkt \cite{lewis_using_1982}. Durch den Ausdruck der Gedanken während der Betätigung des System wird klar wie die User das System verstehen und somit lassen sich leicht Missverständnisse aufdecken. Es wird sehr deutlich welche Teile des Systems oder der Darstellung nicht verstanden werden, denn durch die Thinking-Aloud Methode wird jedes Element des vorliegenden Interfaces vom User interpretiert.
+Der Ursprung der Methode liegt bei psychologischen Studien \cite{ericsson_verbal_1980}, wird jedoch seit längerem und bis heute, in Praxis und Wissenschaft, für die Evaluation von Interfaces und Visualisierungen verwendet \cite{blascheck_triangulating_2016}\cite{denning_value_1990}. Thinking Aloud ist also eine weit verbreitete Methode im Bereich der Evaluation, nicht zuletzt auf Grund der einfachen Struktur und Durchführbarkeit. Es werden lediglich ein Tester sowie das zu testende System oder die Visualisierung benötigt, die ausgesprochenen können dann auf verschiedenste Art und Weise festgehalten werden. Die Nutzbarkeit von Thinking Aloud hängt wesentlich von der genutzten Technik zur Erfassung und nachfolgenden Analyse. Die anzufertigenden Aufzeichnungen der gesprochenen Gedanken der User werden in diesem Zusammenhang als Protokoll bezeichnet. \TODO{Wahnsinnig tiefgründiger Satz...} In der folgenden Liste sind einige dieser Methoden beschrieben:
+
+\begin{itemize}
+  \item Stift und Papier ist die mit Sicherheit einfachste, aber auch günstigste, Methode. Entweder wird die Methode tatsächlich mit Stift und Papier oder am Computer ausgeführt. Beide Varianten sind allerdings an die Schreib- bzw. Tippgeschwindigkeit des Analysten gebunden. Für häufig, vom User ausgeführte, Aktivitäten können daher Schlüssel eingesetzt werden welche diese Aktivitäten repräsentieren. Die Entwicklung eines solchen Schlüsselsystem erhöht wiederum den Zeitaufwand der gesamten Evaluation.
+  \item Audioaufnahme, diese Form funktioniert am besten wenn der User tatsächlich alles ausspricht was er Denkt. Allerdings kann die alleinige Audioaufnahme schwer später mit allen Aktionen in Bezug gebracht werden, somit ist auch eine Analyse schwierig wenn nicht jede Aktion kommentiert wurde.
+  \item Videoaufnahme hat den offensichtlichen Vorteil, dass der Analyst sieht was der User tut. Um einen guten Eindruck vom Geschehen auf dem Bildschirm sowie vom User zu bekommen werden häufig zwei Kameras verwendet, eine auf den User, welche seine Hände sowie sein Gesicht einschließen sollte, gerichtet und eine auf den Bildschirm. Letztere kann allerdings durch eine Screencapture oder logging Software erstzt werden. 
+  \item Computer Logging, dabei werden die Tastenanschläge vom System mitgeloggt. Diese Methode nimmt nur das auf was der User am System macht, nicht seine Reaktionen und andere äußere Einflüsse. Auch haben die Daten keine Semantik, es wird nicht festgehalten warum die Aktion ausgeführt wurde oder was zu bestimmten Aktionsfolgen führte. 
+  \item Notizen der User, bei dieser Methode Notiert der User welche Aktionen er ausführt und wieso. Dabei variiert die Verlässlichkeit der Methode mit jedem User, es sind klare Anweisungen erforderlich um festzuhalten was genau aufgezeichnet werden soll. Diese Art der Aufzeichnung kann ausschließlich für Ausergewöhnliche oder selten durchgeführte Aktionen zum Einsatz kommen um zusätzliche Informationen zu diesen unüblichen Handlungen zu erhalten.
+\end{itemize}
+
+In der Praxis werden häufig eine Kombination dieser Methoden verwendet, da diese sich ergänzen können. Beispielsweise können zusätzlich zu einem Video Aufbau, handgeschriebene Notizen verfasst werden, um auf spezielle Umstände aufmerksam zu machen. Ebenso bietet es sich an zur Aufnahme mit einem Videorecorder eine Aufnahme mit Mikrophon hinzuzufügen, das diese meist eine bessere Audioqualität bieten. Je mehr Elemente man einem Thinking Aloud Evaluationsaufbau hinzufügt desto schwieriger wird es diese Synchronisiert wiederzugeben. Es wird spezielles Equipment benötigt, welches automatisch verschiedene Ressourcen Synchronisieren kann. In speziellen Usability Laboren sind solche Aufbauten meistens verfügbar. \TODO{cite?}
+% paragraph thinking_aloud (end)
+
+\paragraph{Cooperative Evaluation} % (fold)
+\label{par:cooperative_evaluation}
+Eine Abwandlung der Thinking Aloud Methode befasst sich mit kooperativer Arbeit der Teilnehmer der Evaluation. Die Probanden arbeiten hier in engerer Zusammenarbeit mit den Auswertern. In dieser spezialisierten Form richtet der Auswerter auch während der Evaluation Fragen an den User, in der Form von \textit{Warum?} oder \textit{Was wenn?}. Der User kann ebenfalls Fragen an den Auswerter stellen um Unklarheiten zu beseitigen. Die Techniken zur Erfassung sind sind die gleichen wie bei der Thining Aloud Methode beschrieben, generell sind diese Methoden für alle Beobachtungstechniken verwendbar.
+% paragraph cooperative_evaluation (end)
+% subsubsection techniken_auf_grundlage_von_beobachtungen (end)
+
+\subsubsection{Empirische Techniken auf Grundlage von Experimenten} % (fold)
+\label{ssub:empirische_techniken_auf_grundlage_von_experimenten}
+Eine der fundiertesten Methoden zur empirischen Gewinnung von Informationen, sind kontrollierte Experimente. Eine solche methodische Untersuchung kann für ein breites Spektrum an Problemen angewendet werden. Grundlegend sind Experimente ähnlich im Aufbau. Es wird eine Hypothese von demjenigen aufgestellt der die Evaluation durchführt und mit Hilfe von Messungen der Aktionen oder von Attributen des Verhaltens, von einem oder mehreren Teilnehmern, bestimmt. Für das Experiment werden bestimmte Bedingungen festgelegt welche sich nur in den Werten bestimmter Variablen ändern, jegliche Veränderung am verhalten oder der Ausführung der Aktionen des User werden dann diesen Parameteränderungen zugeschrieben. Für das Design eines Experimentes gibt es bestimmte Eigenschaften welche beachtet werden müssen, diese sind die Teilnehmer, die zu testenden Variablen und die Hypothese.
+
+Die Wahl der Teilnehmer ist essentiell für den Erfolg eines Experiments. Bei Experimenten sollte darauf geachtet werden das die User der späteren Zielgruppe so nah wie möglich kommen. Bei Evaluationen von Visualisierungen und Interfaces also potentielle zukünftige Anwender. Im Idealfall sind dies die tatsächlichen zukünftigen Anwender, ist dies nicht möglich so sollten die Teilnehmer so nah am tatsächlichen zukünftigen User angesiedelt sein wie möglich. Das bezieht sich hauptsächlich auf die Bildung und das Alter der Teilnehmer.
+% subsubsection empirische_techniken_auf_grundlage_von_experimenten (end)
+
+\subsubsection{Befragungstechniken} % (fold)
+\label{ssub:befragungstechniken}
+
+% subsubsection befragungstechniken (end)
 % subsection evaluationstechniken_mit_nutzerbeteiligung (end)
 % section grundlagen_der_evaluation (end)
 
@@ -443,62 +482,6 @@ Damit visuelle Analyse Tools effektiv genutzt werden können, müssen diese eine
 Die vorgegebene Taxonomie bietet einen guten Einstiegs- und Orientierungspunkt in der Welt der Visualisierung und kann ebenso als Checkliste bei der Entwicklung eines neuen Analysetools verwendet werden. Sie zeigt viele Möglichkeiten auf um den Daten Herr werden zu können. 
 
 % section anforderungen_und_analyse (end)
-
-\chapter{Evaluationsbasis} % (fold)
-\label{cha:evaluationsbasis}
-In den letzten 20 Jahren beschäftigten sich über 80\% der Evaluationen bezüglich der Visualisierung und ihrer Werkzeuge mit den sich ergebenden Bildern und mit der Performance der verwendeten Algorithmen. Allerdings lassen mehr und mehr Evaluationen Teilnehmer in ihren Studien partizipieren. Von den Teilnehmern wird dann die Leistungen sowie das subjektive Feedback Evaluiert oder es wird ihre (verbesserte) Performance mit der Visualisierung und in der Analyse, als auch bei der Fähigkeit zur Schlussfolgerung berücksichtigt \cite{isenberg_systematic_2013}. 
-
-Die Wahl der Art der Evaluation ist entscheidend, weil diese vorgibt in welcher Art und Weise die Ergebnisse genutzt werden können. Diese Entscheidung wird von mehreren Faktoren beeinträchtigt. Den Zielen welche mit der Methode erreicht werden sollen, die Umstände und Grenzen die der Evaluationsaufgabe auferlegt sind und der Charakteristik der Objekte welche evaluiert werden sollen. Diese unterschiedlichen Faktoren interagieren miteinander was die Wahl der geeignetsten Evaluationsmethode schwierig gestaltet \cite{kitchenham_evaluating_1996-2}.
-
-Lam et al. haben in ihrer Ausarbeitung \cite{lam_empirical_2012} 850 Paper hinsichtlich möglicher Evaluierungsszenarien untersucht. Sie haben sieben verschiedene Szenarien ermittelt, welche sich in zwei grundlegende Kategorien aufteilen. Zum einen gibt es Szenarien, welche mit dem Verständnis der eigentlichen Visualisierungen beschäftigen, zum anderen solche die zum Nachvollziehen der Datenanalyse dienen. Besonders das Szenario aus der Datenanalyse \textbf{evaluating visual data analysis and reasoning (VDAR)} sticht für die angestrebte Arbeit heraus. Evaluationen in diesem Bereich fokussieren sich hauptsächlich darauf ob und wie ein Visualisierungswerkzeug visuelle Analysen und Schlussfolgerungen über Daten zulässt. Mögliche Ergebnisse sind hierbei sowohl Metriken (bspw. Anzahl der Analyseerkenntnisse), als auch subjektives Feedback (bspw. Umfrage über Datenanalysequalität). Meist werden in diesem Bereich Feldstudien genutzt, häufig in der Form von Fallstudien.
-
-\TODO{Korf: Anforderungen an diese Methoden und was kann man daraus gewinnen}
-\iffalse
-Wie Eval andere? -> Kriterien / Nutzen?
-
-Aus verschiedenen Evaluationsmöglichkeiten ergeben sich verschiedene Anforderungen
-
-Evaluierungsszenarien und Evaluierungspraktiken
-\fi
-
-\section{Häufig verwendete Evaluationen im Bereich Visualisierung} % (fold)
-\label{sec:häufig_verwendete_Evaluationen im Bereich Visualisierung}
-Visualisierung/Automotive/Angrenzede
-% section häufig_verwendete_Evaluationen im Bereich Visualisierung (end)
-
-\section{Faktoren zur Abgrenzung der Evaluationstechniken} % (fold)
-\label{sec:Faktoren zur Abgrenzung der Evaluationstechniken}
-
-% section Faktoren zur Abgrenzung der Evaluationstechniken (end)
-
-\section{Entscheidung für Evaluation} % (fold)
-\label{sec:entscheidung_für_Evaluation}
-dieser oder die Kombi aus diesen ist für Automotive am besten weil! Und dieser wird für die Literaturanalyse bzw. Analyse von bestehenden Visualisierungen und Werkzeugen verwendet.
-% section entscheidung_für_Evaluation (end)
-% chapter evaluationsbasis (end)
-
-\chapter{Literaturauswertung} % (fold)
-\label{cha:literaturauswertung}
-
-Dieses Kapitel beleuchtet die für diese Arbeit relevante Literatur. Das Kapitel ist in zwei Bereiche gegliedert, zum einem werden theoretische Abhandlungen betrachtet welche sich mit Anforderungen an vornehmlich Netzwerk bezogenen Visualisierungen beschäftigen. Zum Anderen...
-
-\section{Verwandte Arbeiten} % (fold)
-\label{sec:verwandte_arbeiten}
-\iffalse
-In einer Studie von Sedlmair et al. \cite{sedlmair2009} wurden ausgewählte Darstellungsarten auf ihren Zuspruch für ein Expertenpublikum getestet. Besonders hervorzuheben ist hier der neu kreierte Autobahnview. Der Autobahn View zeigt den Datenstrom der Bussysteme (die Autobahn). Jeder Bus transportiert Nachrichten verschiedener ECUs, dargestellt als horizontale Linie (eine Fahrbahn der Autobahn). Wobei die Daten als Nachrichten, in Form von kleinen Rechtecken (die Fahrzeuge), dargestellt werden. Adaptiert auf ein Ethernet-Backbone Netz, wären die Virtuellen Links die Autobahn, ein einzelner Link eine Fahrbahn und genauso wie ursprünglich wäre eine Nachricht ein Fahrzeug. Damit lassen sich beispielsweise der zyklische Datenverkehr beobachten, das Verständnis für Fahrzeugnetze erweitern, Ursache-Wirkung Relationen untersuchen sowie die gesamte Fahrzeugkommunikation beobachten. Aufgrund der starken Nachfrage und der großen Breite an möglichen Anwendungsgebieten für die Autobahn Darstellungsform, ist es ein Ziel diese in der nächsten Version des Prototypen, möglicherweise in der  anschließenden Masterarbeit, zu verwirklichen. \TODO{Rewrite, has to be included}
-% section verwandte_arbeiten (end)
-\fi
-\section{Visualisierungen und Werkzeuge} % (fold)
-\label{sec:anwendungen_und_werkzeuge}
-Es wurde bereits eine große Zahl an verschiedensten Analyse-Werkzeugen entwickelt. Dieser Abschnitt geht auf die Funktion, die Nutzbarkeit und das Anwendungsgebiet der für diese Arbeit relevanten Programme ein. Die Programme kommen aus den verschiedensten Bereichen, der Automatisierungstechnik, der Flug- und Fahrzeugindustrie so wie weiteren kleineren Bereichen. Es handelt sich dabei sowohl um proprietäre, als auch um wissenschaftlich erarbeitete Anwendungen. 
-\iffalse\TODO{RLY? Recap if still true} 
-
-Cardiogram \cite{sedlmair_cardiogram:_2011} ist eine Software, die speziell zur Darstellung von Daten im Automotiven Bereich entwickelt wurde. Es visualisiert Fehler in Prototypen-Tests über Logfiles, welche während reellen Testfahrten entstehen. In dieser Arbeit von Sedlmaier et al. gibt es bereits erste Ansätze zum Umgang mit großen Datenmengen im Gigabyte Bereich, wie automatisierte Datenfilterung und -abstraktion über State Machines sowie automatisierte Fehlererkennung.\TODO{detaillierter}
-
-
-In der neuesten Arbeit von Lajmi et al. \cite{lajmi_using_2013} wurde Ethernet bereits zur Netzwerkanalyse innerhalb eines Fahrzeugs genutzt. Hier wurde ein Netzwerktool ähnlich zu WireShark, namentlich CableFish, entwickelt. Die Software erkennt bereits neuartige Protokolle der Automobilindustrie, wie z.B. SOME-IP \cite{someip_scalable_2014}, und ist gedacht als Unterstützung für Diagnosetools. Allerdings werden hier zwar mit Hilfe von Ethernet Daten empfangen, es wurden allerdings die Daten der fahrzeugspezifischen Protokolle, wie LIN, CAN und FlexRay in Ethernetpakete verpackt. Des Weiteren wurde dieses Programm bisher nur in einer simulierten Umgebung getestet, hat aber eine verbesserte Echtzeitfähigkeit. Da für wurde ein weiterer Buffer vor der Datenspeicherung eingebaut und so die Anzahl der Systemaufrufe reduziert. \TODO{DETAILS}\fi
-% section anwendungen_und_werkzeuge (end)
-% chapter literaturauswertung (end)
 
 \chapter{Anforderungsanalyse} % (fold)
 \label{cha:anforderungsanalyse}
@@ -576,6 +559,70 @@ Werkzeuge mögliche Evaluierungsrichtungen:
 \end{itemize}
 % section automotive_spezifische_anforderungen (end)
 % chapter anforderungsanalyse (end)
+
+\chapter{Evaluationsbasis} % (fold)
+\label{cha:evaluationsbasis}
+In den letzten 20 Jahren beschäftigten sich über 80\% der Evaluationen bezüglich der Visualisierung und ihrer Werkzeuge mit den sich ergebenden Bildern und mit der Performance der verwendeten Algorithmen. Allerdings lassen mehr und mehr Evaluationen Teilnehmer in ihren Studien partizipieren. Von den Teilnehmern wird dann die Leistungen sowie das subjektive Feedback Evaluiert oder es wird ihre (verbesserte) Performance mit der Visualisierung und in der Analyse, als auch bei der Fähigkeit zur Schlussfolgerung berücksichtigt \cite{isenberg_systematic_2013}. 
+
+Die Wahl der Art der Evaluation ist entscheidend, weil diese vorgibt in welcher Art und Weise die Ergebnisse genutzt werden können. Diese Entscheidung wird von mehreren Faktoren beeinträchtigt. Den Zielen welche mit der Methode erreicht werden sollen, die Umstände und Grenzen die der Evaluationsaufgabe auferlegt sind und der Charakteristik der Objekte welche evaluiert werden sollen. Diese unterschiedlichen Faktoren interagieren miteinander was die Wahl der geeignetsten Evaluationsmethode schwierig gestaltet \cite{kitchenham_evaluating_1996-2}.
+
+Lam et al. haben in ihrer Ausarbeitung \cite{lam_empirical_2012} 850 Paper hinsichtlich möglicher Evaluierungsszenarien untersucht. Sie haben sieben verschiedene Szenarien ermittelt, welche sich in zwei grundlegende Kategorien aufteilen. Zum einen gibt es Szenarien, welche mit dem Verständnis der eigentlichen Visualisierungen beschäftigen, zum anderen solche die zum Nachvollziehen der Datenanalyse dienen. Besonders das Szenario aus der Datenanalyse \textbf{evaluating visual data analysis and reasoning (VDAR)} sticht für die angestrebte Arbeit heraus. Evaluationen in diesem Bereich fokussieren sich hauptsächlich darauf ob und wie ein Visualisierungswerkzeug visuelle Analysen und Schlussfolgerungen über Daten zulässt. Mögliche Ergebnisse sind hierbei sowohl Metriken (bspw. Anzahl der Analyseerkenntnisse), als auch subjektives Feedback (bspw. Umfrage über Datenanalysequalität). Meist werden in diesem Bereich Feldstudien genutzt, häufig in der Form von Fallstudien.
+
+\TODO{Korf: Anforderungen an diese Methoden und was kann man daraus gewinnen}
+
+Wie Eval andere? -> Kriterien / Nutzen?
+
+Aus verschiedenen Evaluationsmöglichkeiten ergeben sich verschiedene Anforderungen
+
+Evaluierungsszenarien und Evaluierungspraktiken
+
+\TODO{Evaluationstechnikwahl abgrenzen von anderen die entweder das gleiche gemacht haben oder das hat eben so noch keiner angewandt}
+
+\section{Häufig verwendete Evaluationen im Bereich Visualisierung} % (fold)
+\label{sec:häufig_verwendete_Evaluationen im Bereich Visualisierung}
+Visualisierung/Automotive/Angrenzede
+% section häufig_verwendete_Evaluationen im Bereich Visualisierung (end)
+
+\section{Faktoren zur Abgrenzung der Evaluationstechniken} % (fold)
+\label{sec:Faktoren zur Abgrenzung der Evaluationstechniken}
+
+% section Faktoren zur Abgrenzung der Evaluationstechniken (end)
+
+\section{Entscheidung für Evaluation} % (fold)
+\label{sec:entscheidung_für_Evaluation}
+dieser oder die Kombi aus diesen ist für Automotive am besten weil! Und dieser wird für die Literaturanalyse bzw. Analyse von bestehenden Visualisierungen und Werkzeugen verwendet.
+% section entscheidung_für_Evaluation (end)
+% chapter evaluationsbasis (end)
+
+\chapter{Evaluation ausgewählter Visualisierungstechniken} % (fold)
+\label{cha:evaluation_ausgewählter_visualisierungstechniken}
+
+Dieses Kapitel beleuchtet die für diese Arbeit relevante Literatur. Das Kapitel ist in zwei Bereiche gegliedert, zum einem werden theoretische Abhandlungen betrachtet welche sich mit Anforderungen an vornehmlich Netzwerk bezogenen Visualisierungen beschäftigen. Zum Anderen...
+
+\section{Verwandte Arbeiten} % (fold)
+\label{sec:verwandte_arbeiten}
+\iffalse
+In einer Studie von Sedlmair et al. \cite{sedlmair2009} wurden ausgewählte Darstellungsarten auf ihren Zuspruch für ein Expertenpublikum getestet. Besonders hervorzuheben ist hier der neu kreierte Autobahnview. Der Autobahn View zeigt den Datenstrom der Bussysteme (die Autobahn). Jeder Bus transportiert Nachrichten verschiedener ECUs, dargestellt als horizontale Linie (eine Fahrbahn der Autobahn). Wobei die Daten als Nachrichten, in Form von kleinen Rechtecken (die Fahrzeuge), dargestellt werden. Adaptiert auf ein Ethernet-Backbone Netz, wären die Virtuellen Links die Autobahn, ein einzelner Link eine Fahrbahn und genauso wie ursprünglich wäre eine Nachricht ein Fahrzeug. Damit lassen sich beispielsweise der zyklische Datenverkehr beobachten, das Verständnis für Fahrzeugnetze erweitern, Ursache-Wirkung Relationen untersuchen sowie die gesamte Fahrzeugkommunikation beobachten. Aufgrund der starken Nachfrage und der großen Breite an möglichen Anwendungsgebieten für die Autobahn Darstellungsform, ist es ein Ziel diese in der nächsten Version des Prototypen, möglicherweise in der  anschließenden Masterarbeit, zu verwirklichen. \TODO{Rewrite, has to be included}
+% section verwandte_arbeiten (end)
+\fi
+\section{Visualisierungen und Werkzeuge} % (fold)
+\label{sec:anwendungen_und_werkzeuge}
+Es wurde bereits eine große Zahl an verschiedensten Analyse-Werkzeugen entwickelt. Dieser Abschnitt geht auf die Funktion, die Nutzbarkeit und das Anwendungsgebiet der für diese Arbeit relevanten Programme ein. Die Programme kommen aus den verschiedensten Bereichen, der Automatisierungstechnik, der Flug- und Fahrzeugindustrie so wie weiteren kleineren Bereichen. Es handelt sich dabei sowohl um proprietäre, als auch um wissenschaftlich erarbeitete Anwendungen. 
+\iffalse\TODO{RLY? Recap if still true} 
+
+Cardiogram \cite{sedlmair_cardiogram:_2011} ist eine Software, die speziell zur Darstellung von Daten im Automotiven Bereich entwickelt wurde. Es visualisiert Fehler in Prototypen-Tests über Logfiles, welche während reellen Testfahrten entstehen. In dieser Arbeit von Sedlmaier et al. gibt es bereits erste Ansätze zum Umgang mit großen Datenmengen im Gigabyte Bereich, wie automatisierte Datenfilterung und -abstraktion über State Machines sowie automatisierte Fehlererkennung.\TODO{detaillierter}
+
+
+In der neuesten Arbeit von Lajmi et al. \cite{lajmi_using_2013} wurde Ethernet bereits zur Netzwerkanalyse innerhalb eines Fahrzeugs genutzt. Hier wurde ein Netzwerktool ähnlich zu WireShark, namentlich CableFish, entwickelt. Die Software erkennt bereits neuartige Protokolle der Automobilindustrie, wie z.B. SOME-IP \cite{someip_scalable_2014}, und ist gedacht als Unterstützung für Diagnosetools. Allerdings werden hier zwar mit Hilfe von Ethernet Daten empfangen, es wurden allerdings die Daten der fahrzeugspezifischen Protokolle, wie LIN, CAN und FlexRay in Ethernetpakete verpackt. Des Weiteren wurde dieses Programm bisher nur in einer simulierten Umgebung getestet, hat aber eine verbesserte Echtzeitfähigkeit. Da für wurde ein weiterer Buffer vor der Datenspeicherung eingebaut und so die Anzahl der Systemaufrufe reduziert. \TODO{DETAILS}\fi
+
+\section{Auswertung } % (fold)
+\label{sec:auswertung}
+\TODO{hier soll stehen welches nun die besten und wichtigsten sind!}
+% section auswertung (end)
+% section anwendungen_und_werkzeuge (end)
+% chapter evaluation_ausgewählter_visualisierungstechniken (end)
+
+
 \iffalse
 \chapter{Auswahlkriterien} % (fold)
 \label{cha:auswahlkriterien}
@@ -595,7 +642,7 @@ daraus ergibt sich (hoffentlich) ein völlig neuer Ansatz
 
 \chapter{Zusammenfassung und Fazit} % (fold)
 \label{cha:zusammenfassung_und_fazit}
-
+Wenn man sieht wieviel fahrzeuge kommunizieren und kommunizieren werden CAR2X CAR2CAR etc ist es wichtig geeignete darstellungen zu finden für die autos.... sowas
 % chapter zusammenfassung_und_fazit (end)
 
 \backmatter
