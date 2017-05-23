@@ -287,7 +287,7 @@ Die zehn oben angesprochenen Heuristiken sind:
   \item \textbf{Minimierung der Gedächtnisbelastung:} Der Nutzer sollte sich keine Informationen Dialogübergreifend merken müssen. Anleitungen zur Nutzung des Systems, sollten jederzeit sichtbar oder einfach aufrufbar gemacht werden, dort wo es angebracht ist.
   \item \textbf{Konsistenz:} Nutzer sollten sich nicht fragen müssen ob mit einem unterschiedlichen Ausdrücken, Situationen oder Aktionen das Gleiche gemeint ist.
   \item \textbf{Feedback:} Das System sollte dem Nutzer zu jeder Zeit, ausreichend und innerhalb einer angemessenen Zeitspanne, Feedback geben um den Status des Programms einschätzen zu können. 
-  \item \textbf{Klar markierte \textit{Ausgänge}:} Es kommt häufig vor das Nutzer Systemfunktionen ohne Intension auswählen. In diesen Situationen muss es ein klar markierter \textit{Ausgang}, um den ungewünschten Status verlassen zu können, vorhanden sein. 
+  \item \textbf{Klar markierte \textit{Ausgänge}:} Es kommt häufig vor das Nutzer Systemfunktionen ohne Intension auswählen. In diesen Situationen muss es ein klar markierter \textit{Ausgang}, um den unerwünschten Status verlassen zu können, vorhanden sein. 
   \item \textbf{Abkürzungen:} Diese stellen Beschleunigungen für den erfahrenen Benutzer dar. Beispielsweise können Tastenkombinationen für Aktionen bereitgestellt werden, welche den Arbeitsablauf beschleunigen.  Diese Funktionen für erfahrenere Nutzer, sollten nicht auf den ersten Blick sichtbar sein, um einen Anfänger nicht zu verwirren.
   \item \textbf{Gute Fehlermeldungen:} Fehlermeldungen sollten klar in Spreche ausgedrückt werden, nicht in Codes. Es soll das Problem präzise beschrieben werden und konstruktive, im besten Fall, dass Problem lösende, Informationen enthalten.
   \item \textbf{Fehler vermeiden:} Besser als gute Fehlermeldungen ist, wenn Fehler gar nicht erst auftreten. Ein durchdachtes Systemdesign kann eine Vielzahl an einfachen Fehlern abfangen.
@@ -386,15 +386,6 @@ In den anschließenden Abschnitten werden folgende Evaluationsbereiche mit Nutze
   \item \nameref{ssub:befragungstechniken}
 \end{itemize}
 
-\iffalse
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{img/user_part_isenberg.pdf}
-  \caption{Histogramm der Studien im Bereich der Visualisierung mit Nutzerbeteiligung von 581 Arbeiten aus einem Zeitraum von zehn Jahren. Frei nach Isenberg et. al \cite{isenberg_systematic_2013}}
-  \label{fig:no_of_users}
-\end{figure}
-\fi
-
 \subsubsection{Techniken auf Grundlage von Beobachtungen} % (fold)
 \label{ssub:techniken_auf_grundlage_von_beobachtungen}
 Eine weit verbreitete Methode um Informationen über die tatsächliche Benutzung eines Systems zu sammeln ist Nutzer bei der Bedienung des Systems zu beobachten. Dabei werden die Nutzer aufgefordert bestimmte Aufgaben mit dem Programm zu erledigen. Es ist jedoch auch möglich die Untersuchung am eigentlichen Arbeitsplatz durchzuführen, wobei die Nutzer ihren normalen Tätigkeiten nachgehen. Ein Auswerter beobachtet den User und zeichnet seine Aktionen auf. Zu Aufzeichnung stehen ihm verschiedenste Möglichkeiten zur Verfügung, welche in diesem Abschnitt näher beleuchtet werden. In den meisten Fällen ist einfaches Beobachten nicht genug um die Auswirkungen der Aktionen der User nachzuvollziehen, weshalb diese dazu angehalten werden während der Arbeit mit einem System laut auszusprechen welche Gedanken sie bei den Aktionen haben. Dies nennt man die \"Thinking Aloud\"-Methode. 
@@ -425,12 +416,23 @@ Eine Abwandlung der Thinking Aloud Methode befasst sich mit kooperativer Arbeit 
 \label{ssub:empirische_techniken_auf_grundlage_von_experimenten}
 Eine der fundiertesten Methoden zur empirischen Gewinnung von Informationen, sind kontrollierte Experimente. Eine solche methodische Untersuchung kann für ein breites Spektrum an Problemen angewendet werden. Grundlegend sind Experimente ähnlich im Aufbau. Es wird eine Hypothese von demjenigen aufgestellt der die Evaluation durchführt und mit Hilfe von Messungen der Aktionen oder von Attributen des Verhaltens, von einem oder mehreren Teilnehmern, bestimmt. Für das Experiment werden bestimmte Bedingungen festgelegt welche sich nur in den Werten bestimmter Variablen ändern, jegliche Veränderung am verhalten oder der Ausführung der Aktionen des User werden dann diesen Parameteränderungen zugeschrieben. Für das Design eines Experimentes gibt es bestimmte Eigenschaften welche beachtet werden müssen, diese sind die Teilnehmer, die zu testenden Variablen und die Hypothese.
 
-Die Wahl der Teilnehmer ist essentiell für den Erfolg eines Experiments. Bei Experimenten sollte darauf geachtet werden das die User der späteren Zielgruppe so nah wie möglich kommen. Bei Evaluationen von Visualisierungen und Interfaces also potentielle zukünftige Anwender. Im Idealfall sind dies die tatsächlichen zukünftigen Anwender, ist dies nicht möglich so sollten die Teilnehmer so nah am tatsächlichen zukünftigen User angesiedelt sein wie möglich. Das bezieht sich hauptsächlich auf die Bildung und das Alter der Teilnehmer.
+Die Wahl der Teilnehmer ist essentiell für den Erfolg eines Experiments. Bei Experimenten sollte darauf geachtet werden das die User der späteren Zielgruppe so nah wie möglich kommen. Bei Evaluationen von Visualisierungen und Interfaces also potentielle zukünftige Anwender. Im Idealfall sind dies die tatsächlichen zukünftigen Anwender, ist dies nicht möglich so sollten die Teilnehmer so nah am tatsächlichen zukünftigen User angesiedelt sein wie möglich. Das bezieht sich hauptsächlich auf die Bildung und das Alter der Teilnehmer. Ein weiter Aspekt welche bei der Wahl der Teilnehmer wichtig ist, ist die Anzahl. Nielsen und Landauer \cite{nielsen_mathematical_1993} schlagen in ihrer Abhandlung eine Teilnehmerzahl zwischen eins und fünf vor. Breits mit einem Teilnehmer wird etwa ein drittel der Usability-Probleme aufgedeckt. Bei einer Teilnehmerzahl höher als fünf gibt es keinen signifikanten Mehrwert mehr. Diese Aussagen bestätigen auch den Trend in Evaluationsstudien bezüglich Visualisierungen. Abbildung \ref{fig:no_of_users} Zeigt die Anzahl der Evaluationen mit Userbeteiligung über eine Zeitspanne von Zehn Jahren. Wie in der Abbildung zu sehen werden in den meisten Studien $1 - 5$ User eingebunden. Der größte Teil davon, 27 Studien, hatten eine Userbeteiligung von $1 - 2$ \cite{isenberg_systematic_2013}. 
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/user_part_isenberg.pdf}
+  \caption{Histogramm der Studien im Bereich der Visualisierung mit Nutzerbeteiligung von 581 Arbeiten aus einem Zeitraum von zehn Jahren. Frei nach Isenberg et. al \cite{isenberg_systematic_2013}}
+  \label{fig:no_of_users}
+\end{figure}
+
+Bei den Variablen gibt es grundlegend zwei unterschiedliche, unabhängige und abhängige Variablen. Unabhängige Variablen werden gezielt verändert um die Auswirkung einer solchen Änderung auf die abhängige Variable, also eine Messgröße, messen zu können. Im Bereich der Visualisierung sind unabhängige variablen beispielsweise das Design bestimmter Elemente einer Darstellung oder der Eigenschaften der Legende. Abhängige Variablen sind diejenigen welche eine messbare Veränderung während der Durchführung des Experimentes eigen, ihre werte sind abhängig von den Änderungen an den unabhängigen Variablen. Solche Parameter wären beispielsweise, die Geschwindigkeit mit welcher bestimmte Aspekte eines Interfaces bedient werden können oder die Anzahl an Fehlern die vom User gemacht werden.
+
+Die Hypothese ist die Annahme die vor dem Experiment getroffen wird und mit Hilfe der im Laufe des Versuchs gewonnenen Empirischen Daten bewiesen werden soll. Mit Angabe der beiden Variablentypen wird vorhergesagt Änderungen an diesen auswirken. Der Beweis erfolgt durch die Widerlegung der Nullhypothese, welche Aussagt das die Änderungen an den unabhängigen Variablen eben keine Auswirkungen haben. 
 % subsubsection empirische_techniken_auf_grundlage_von_experimenten (end)
 
 \subsubsection{Befragungstechniken} % (fold)
 \label{ssub:befragungstechniken}
-
+Eine weitere Menge der Evaluationstechniken bezieht sich auf die direkte Befragung der User. 
 % subsubsection befragungstechniken (end)
 % subsection evaluationstechniken_mit_nutzerbeteiligung (end)
 % section grundlagen_der_evaluation (end)
